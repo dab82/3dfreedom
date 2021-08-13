@@ -36,7 +36,27 @@
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/example.html"></include>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <!-- Header -->
+    <include src="./partials/header.html"></include>
+    <!-- Header backdrop -->
+    <include src="./partials/header-backdrop.html"></include>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <include src="./partials/main-page-hero.html"></include>
+
+      <!-- Gallery -->
+      <include src="./partials/main-page-gallery.html"></include>
+
+      <!-- More photos -->
+      <include src="./partials/main-page-more-foto.html"></include>
+    </main>
+
+    <!-- Footer -->
+    <include src="./partials/footer.html"></include>
+
+    <!-- JS -->
     <script src="./index.js"></script>
   </body>
 </html>
