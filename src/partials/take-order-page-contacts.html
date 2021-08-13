@@ -1,0 +1,60 @@
+<section class="take-order__modal-form">
+  <h2 class="take-order__form-head">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+  <form class="take-order__form" name="contact-form" action="#">
+    <label class="take-order__form-field">
+      Ім’я
+      <input
+        type="text"
+        name="user-name"
+        required
+        minlength="2"
+        pattern="[a-zA-Zа-яёА-ЯЁ]+"
+        title="Имя должно содержать символы кирилицы или латиницы"
+        class="take-order__form-input"
+      />
+    </label>
+
+    <label class="take-order__form-field">
+      email
+      <input type="email" name="user-mail" required class="take-order__form-input" />
+    </label>
+
+    <label for="plastic-types" class="take-order__form-field">Види пластика</label>
+    <select id="plastic-types" name="plastic-types">
+      <option value="PLA">PLA</option>
+      <option value="ABS">ABS</option>
+      <option value="PVA">PVA</option>
+      <option value="Nylone">Nylone</option>
+      <option value="HIPS">HIPS</option>
+    </select>
+
+    <label for="quality" class="take-order__form-field">Якість друку</label>
+    <select id="quality" name="quality">
+      <option value="300">300 мікрон</option>
+      <option value="200">200 мікрон</option>
+      <option value="100">100 мікрон</option>
+      <option value="help">Труднощі у виборі - ми допоможемо</option>
+    </select>
+
+    <label for="color" class="take-order__form-field">Колір</label>
+    <select id="color" name="color">
+      <option value="White">White</option>
+      <option value="Black">Black</option>
+      <option value="Blue">Blue</option>
+      <option value="Yelow">Yelow</option>
+      <option value="Green">Green</option>
+      <option value="Orange">Orange</option>
+      <option value="Red">Red</option>
+    </select>
+
+    <label>
+      Повідомлення
+      <textarea name="message" placeholder="Залишіть своє повідомлення"></textarea>
+      <input name="edd-file" type="file" />
+      <p>*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
+    </label>
+    <button type="submit" class="">Відправити</button>
+  </form>
+</section>
+
+<section></section>
