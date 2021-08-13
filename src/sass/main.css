@@ -4,7 +4,7 @@
  * Все паршалы подключаются сюда.
  */
 .example {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.5;
@@ -29,5 +29,4 @@
   background-image: url("../images/desktop/main/background/img1.jpg");
   background-size: cover;
   background-position: center;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
