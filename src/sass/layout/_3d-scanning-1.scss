@@ -1,0 +1,6 @@
+.YV-scanning-hero__title {
+  @include font(24px, 700, 30px);
+  //   font-family: Cera Pro;
+  color: var(--accent-color);
+  border: 1px solid red;
+}
