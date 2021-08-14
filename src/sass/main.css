@@ -56,66 +56,82 @@ body {
   font-family: var(--main-font);
 }
 
-header {
+body header {
   padding: 29px 0 32px;
 }
 
 @media (min-width: 768px) {
-  header {
+  body header {
     padding: 20px 0 35px;
   }
 }
 
 @media (min-width: 1440px) {
-  header {
+  body header {
     padding: 40px 0 24px;
   }
 }
 
-footer {
+body footer {
   padding: 32px 0;
 }
 
 @media (min-width: 1440px) {
-  footer {
+  body footer {
     padding: 30px 0;
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-ul,
-ol {
+body p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+@media (min-width: 1440px) {
+  body p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.28;
+  }
+}
+
+body ul,
+body ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
 
-a {
+body a {
   text-decoration: none;
   color: inherit;
 }
 
-img {
+body img {
   display: block;
   width: 100%;
 }
 
-address {
+body address {
   font-style: normal;
 }
 
-button {
+body button {
   padding: 0;
   border: none;
 }
