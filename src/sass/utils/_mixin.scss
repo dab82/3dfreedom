@@ -30,21 +30,49 @@
   }
 }
 
+// font-size: 18px;
+// font-weight: 400;
+// line-height: 1.33;
 @mixin font($fs: 18px, $fw: 400, $lh: 24px) {
   font-size: $fs;
   font-weight: $fw;
   line-height: decimal-round($lh/$fs, 2);
 }
+
+// display: flex;
+// flex-wrap: wrap;
+// align-items: center;
+// justify-content: center;
 @mixin flex-center($df: flex, $jc: center, $al: center, $fw: wrap) {
   display: $df;
   flex-wrap: $fw;
   align-items: $al;
   justify-content: $jc;
 }
+
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: *width*),
+//     screen and (min-resolution: 192dpi) and (min-width: *width*),
+//     screen and (min-resolution: 2dppx) and (min-width: *width*) {
+//     background-image: url(*image*);
+//   }
 @mixin retina($image, $width) {
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: $width),
-    screen and (min-resolution: 192dpi) and (min-width: $width),
-    screen and (min-resolution: 2dppx) and (min-width: $width) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: map-get($min-widths, $width)),
+    screen and (min-resolution: 192dpi) and (min-width: map-get($min-widths, $width)),
+    screen and (min-resolution: 2dppx) and (min-width: map-get($min-widths, $width)) {
     background-image: url($image);
+  }
+}
+
+// @media screen and (min-width: *width*)
+@mixin min-width($width) {
+  @media (min-width: map-get($min-widths, $width)) {
+    @content;
+  }
+}
+
+// @media screen and (min-width: *width*)
+@mixin max-width($width) {
+  @media (max-width: map-get($max-widths, $width)) {
+    @content;
   }
 }
