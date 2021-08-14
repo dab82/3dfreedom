@@ -227,7 +227,7 @@ button {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(../../font/CaviarDreams-Bold.woff) format("woff"), url(../font/CaviarDreams-Bold.woff2) format("woff2");
+  src: url(../font/CaviarDreams-Bold.woff) format("woff"), url(../font/CaviarDreams-Bold.woff2) format("woff2");
 }
 
 .container {
