@@ -1,9 +1,8 @@
 // UTILS
 @import './utils/variables';
-@import './base/breakpoinnts';
+@import './utils/breakpoinnts';
 @import './utils/visually-hidden';
 @import './utils/mixin';
-@import './utils/container';
 
 // BASE
 @import './base/body';
@@ -11,6 +10,7 @@
 @import './base/fonts';
 
 // COMPONENTS
+@import './components/container';
 @import './components/main-button';
 
 // LAYOUT
