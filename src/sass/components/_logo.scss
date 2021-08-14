@@ -1,0 +1,13 @@
+.logo {
+  display: block;
+  width: 101px;
+  height: 25px;
+  @include min-width('medium') {
+    width: 125px;
+    height: 31px;
+  }
+  @include min-width('large') {
+    width: 192px;
+    height: 48px;
+  }
+}
