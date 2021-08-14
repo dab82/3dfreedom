@@ -24,10 +24,48 @@ h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
-
+h1 {
+  text-align: center;
+  color: var(--text-color);
+  @include font(18px, 400, 21px);
+  @include min-width('medium') {
+    @include font(24px, 400, 28px);
+  }
+  @include min-width('large') {
+    @include font(48px, 400, 56px);
+  }
+}
+h2 {
+  @include font(24px, 700, 30px);
+  color: var(--accent-color);
+  @include min-width('medium') {
+    @include font(36px, 700, 45px);
+  }
+  @include min-width('large') {
+    @include font(48px, 700, 60px);
+  }
+}
+h3 {
+  @include font(18px, 700, 23px);
+  color: var(--accent-color);
+  @include min-width('medium') {
+    @include font(24px, 700, 30px);
+  }
+  @include min-width('large') {
+    @include font(36px, 300, 45px);
+  }
+}
 p {
   margin-top: 0;
   margin-bottom: 0;
+  @include font(16px, 300, 20px);
+  color: var(--text-color);
+  @include min-width('medium') {
+    @include font(16px, 300, 20px);
+  }
+  @include min-width('large') {
+    @include font(18px, 300, 23px);
+  }
 }
 
 ul,
