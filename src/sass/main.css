@@ -32,47 +32,28 @@
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-body {
-  font-family: var(--main-font);
-}
-
-header,
-section,
-footer,
-.backdrop {
-  margin: 0 auto;
 }
 
 @media (min-width: 320px) {
-  header,
-  section,
-  footer,
-  .backdrop {
+  .container {
     width: 320px;
   }
 }
 
 @media (min-width: 768px) {
-  header,
-  section,
-  footer,
-  .backdrop {
-    width: 768px;
+  .container {
+    width: 688px;
   }
 }
 
 @media (min-width: 1440px) {
-  header,
-  section,
-  footer,
-  .backdrop {
-    width: 1440px;
+  .container {
+    width: 1102px;
   }
+}
+
+body {
+  font-family: var(--main-font);
 }
 
 header {
@@ -211,6 +192,26 @@ button {
 .main-button:focus {
   background-color: var(--icon-pseudoelement-color);
   color: #fff;
+}
+
+.logo {
+  display: block;
+  width: 100px;
+  height: 25px;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 125px;
+    height: 31px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo {
+    width: 192px;
+    height: 48px;
+  }
 }
 
 .YV-scanning-hero__title {

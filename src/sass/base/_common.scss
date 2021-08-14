@@ -1,20 +1,3 @@
-// Adaptive width
-header,
-section,
-footer,
-.backdrop {
-  margin: 0 auto;
-  @include min-width('small') {
-    width: map-get($min-widths, 'small');
-  }
-  @include min-width('medium') {
-    width: map-get($min-widths, 'medium');
-  }
-  @include min-width('large') {
-    width: map-get($min-widths, 'large');
-  }
-}
-
 header {
   padding: 29px 0 32px;
   @include min-width('medium') {
