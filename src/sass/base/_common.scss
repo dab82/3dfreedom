@@ -1,0 +1,71 @@
+// Adaptive width
+header,
+section,
+footer,
+.backdrop {
+  margin: 0 auto;
+  @include min-width('small') {
+    width: map-get($min-widths, 'small');
+  }
+  @include min-width('medium') {
+    width: map-get($min-widths, 'medium');
+  }
+  @include min-width('large') {
+    width: map-get($min-widths, 'large');
+  }
+}
+
+header {
+  padding: 29px 0 32px;
+  @include min-width('medium') {
+    padding: 20px 0 35px;
+  }
+  @include min-width('large') {
+    padding: 40px 0 24px;
+  }
+}
+
+footer {
+  padding: 32px 0;
+  @include min-width('large') {
+    padding: 30px 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  padding: 0;
+  border: none;
+}
