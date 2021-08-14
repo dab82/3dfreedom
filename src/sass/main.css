@@ -1,32 +1,217 @@
-@charset "UTF-8";
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-.example {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 1.5;
-  background-color: tomato;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
+:root {
+  --text-color: #2b2b2b;
+  --accent-color: #487996;
+  --icon-pseudoelement-color: #008cef;
+  --hero-lang-color: #bdbdbd;
+  --form-input-text-color: #ffffff;
+  --form-placeholder-color: #cdcdcd;
+  --form-input-bg-color: rgba(72, 121, 150, 0.5);
+  --btn-footer-bg-color: #f5f5fa;
+  --backdrop-bg-color: rgba(43, 43, 43, 0.8);
+  --btn-box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  --footer-box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
+  --main-font: 'Montserrat', sans-serif;
+  --header-font: 'Montserrat Alternates', sans-serif;
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+header,
+section,
+footer,
+.backdrop {
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) {
+  header,
+  section,
+  footer,
+  .backdrop {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  header,
+  section,
+  footer,
+  .backdrop {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1440px) {
+  header,
+  section,
+  footer,
+  .backdrop {
+    width: 1440px;
+  }
+}
+
+header {
+  padding: 29px 0 32px;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 20px 0 35px;
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    padding: 40px 0 24px;
+  }
+}
+
+footer {
+  padding: 32px 0;
+}
+
+@media (min-width: 1440px) {
+  footer {
+    padding: 30px 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  padding: 0;
+  border: none;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../font/montserrat-light-webfont.woff2) format("woff"), url(../font/montserrat-light-webfont.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../font/montserrat-regular-webfont.woff) format("woff"), url(../font/montserrat-regular-webfont.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../font/montserrat-medium-webfont.woff2) format("woff"), url(../font/montserrat-medium-webfont.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 700;
-  background-color: #009688;
+  font-display: swap;
+  src: url(../font/montserrat-bold-webfont.woff2) format("woff"), url(../font/montserrat-bold-webfont.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../font/Montserrat_Alternates/montserratalternates-regular-webfont.woff) format("woff"), url(../font/Montserrat_Alternates/montserratalternates-regular-webfont.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../font/Montserrat_Alternates/montserratalternates-bold-webfont.woff) format("woff"), url(../font/Montserrat_Alternates/montserratalternates-bold-webfont.woff2) format("woff2");
+}
+
+.main-button {
+  display: block;
+  cursor: pointer;
+  background-color: var(--btn-footer-bg-color);
+  width: 280px;
+  height: 56px;
+  padding: 16px 0;
+  border-radius: 30.5px;
+  outline: none;
+  -webkit-box-shadow: var(--btn-box-shadow);
+          box-shadow: var(--btn-box-shadow);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+
+
+.main-button:hover,
+.main-button:focus {
+  background-color: var(--icon-pseudoelement-color);
   color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
 }
-
-.example .background {
-  height: 240px;
-  background-image: url("../images/desktop/main/background/img1.jpg");
-  background-size: cover;
-  background-position: center;
-}/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
