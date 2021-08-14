@@ -29,29 +29,6 @@
   margin: -1px;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media (min-width: 320px) {
-  .container {
-    width: 320px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 688px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    width: 1102px;
-  }
-}
-
 body {
   font-family: var(--main-font);
 }
@@ -90,6 +67,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0;
+  color: var(--accent-color);
 }
 
 h1 {
@@ -120,7 +98,6 @@ h2 {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.25;
-  color: var(--accent-color);
 }
 
 @media (min-width: 768px) {
@@ -143,7 +120,6 @@ h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.28;
-  color: var(--accent-color);
 }
 
 @media (min-width: 768px) {
@@ -157,7 +133,7 @@ h3 {
 @media (min-width: 1440px) {
   h3 {
     font-size: 36px;
-    font-weight: 300;
+    font-weight: 700;
     line-height: 1.25;
   }
 }
@@ -169,14 +145,6 @@ p {
   font-weight: 300;
   line-height: 1.25;
   color: var(--text-color);
-}
-
-@media (min-width: 768px) {
-  p {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.25;
-  }
 }
 
 @media (min-width: 1440px) {
@@ -262,6 +230,29 @@ button {
   src: url(../font/Montserrat_Alternates/montserratalternates-bold-webfont.woff) format("woff"), url(../font/Montserrat_Alternates/montserratalternates-bold-webfont.woff2) format("woff2");
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 688px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1102px;
+  }
+}
+
 .main-button {
   display: block;
   cursor: pointer;
@@ -286,6 +277,26 @@ button {
 .main-button:focus {
   background-color: var(--icon-pseudoelement-color);
   color: #fff;
+}
+
+.logo {
+  display: block;
+  width: 101px;
+  height: 25px;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 125px;
+    height: 31px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo {
+    width: 192px;
+    height: 48px;
+  }
 }
 
 .it-container {
