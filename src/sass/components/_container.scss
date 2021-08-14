@@ -1,0 +1,13 @@
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  @include min-width('small') {
+    width: 320px;
+  }
+  @include min-width('medium') {
+    width: 688px;
+  }
+  @include min-width('large') {
+    width: 1102px;
+  }
+}
