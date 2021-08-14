@@ -32,47 +32,28 @@
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-body {
-  font-family: var(--main-font);
-}
-
-header,
-section,
-footer,
-.backdrop {
-  margin: 0 auto;
 }
 
 @media (min-width: 320px) {
-  header,
-  section,
-  footer,
-  .backdrop {
+  .container {
     width: 320px;
   }
 }
 
 @media (min-width: 768px) {
-  header,
-  section,
-  footer,
-  .backdrop {
-    width: 768px;
+  .container {
+    width: 688px;
   }
 }
 
 @media (min-width: 1440px) {
-  header,
-  section,
-  footer,
-  .backdrop {
-    width: 1440px;
+  .container {
+    width: 1102px;
   }
+}
+
+body {
+  font-family: var(--main-font);
 }
 
 header {
@@ -106,10 +87,104 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.17;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.17;
+  }
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 1440px) {
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.28;
+  color: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 1440px) {
+  h3 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.25;
+  }
+}
+
 p {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+  color: var(--text-color);
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 1440px) {
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.28;
+  }
 }
 
 ul,
@@ -211,6 +286,98 @@ button {
 .main-button:focus {
   background-color: var(--icon-pseudoelement-color);
   color: #fff;
+}
+
+.it-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) {
+  .it-container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .it-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .it-container {
+    width: 1444px;
+  }
+}
+
+.gallery-title {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #487996;
+  margin-bottom: 16px;
+}
+
+.about-list-img {
+  display: block;
+}
+
+.gallery__card-title {
+  font-family: Montserrat;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #487996;
+  margin-bottom: 24px;
+}
+
+.gallery__card-title_margin-bot {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-title {
+    margin-bottom: 32px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  .gallery__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: calc(-1 * 18px);
+    margin-top: calc(-1 * 32px);
+  }
+  .gallery__list-card {
+    -ms-flex-preferred-size: calc((100% - 2 * 18px) / 2);
+        flex-basis: calc((100% - 2 * 18px) / 2);
+    margin-left: 18px;
+    margin-top: 32px;
+  }
+  .gallery__card-title {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery__list {
+    margin-left: calc(-1 * 32px);
+    margin-top: calc(-1 * 56px);
+  }
+  .gallery__list-card {
+    -ms-flex-preferred-size: calc((100% - 2 * 32px) / 2);
+        flex-basis: calc((100% - 2 * 32px) / 2);
+    margin-left: 32px;
+    margin-top: 56px;
+  }
 }
 
 .YV-scanning-hero__title {
