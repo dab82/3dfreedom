@@ -69,6 +69,9 @@
   .lang-button {
     margin-right: 28px;
   }
+  .as-header-line {
+    width: 652px;
+  }
 }
 .as-call-list__link {
   font-family: var(--main-font);
@@ -86,4 +89,42 @@
 .as-call-list__link {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 1444px) {
+  .as-header-line {
+    width: 1280px;
+    align-items: flex-start;
+  }
+  .burger-button {
+    display: none;
+  }
+  .as-logo-header {
+    margin-right: 213px;
+  }
+  .lang-button {
+    margin-right: 94px;
+  }
+}
+
+.as-pagination__dropdown {
+  display: none;
+}
+
+.as-pagination__list {
+  display: flex;
+  text-align: center;
+  margin-right: 109px;
+}
+.as-pagination__item:not(:last-child) {
+  margin-right: 54px;
+}
+
+.as-pagination__link {
+  font-family: var(--header-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
 }
