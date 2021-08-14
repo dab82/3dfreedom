@@ -1,3 +1,24 @@
+.it-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) {
+  .it-container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .it-container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1444px) {
+  .it-container {
+    width: 1444px;
+  }
+}
 .gallery-title {
   font-family: Montserrat;
   @include font(24px, 700, 30px);
