@@ -61,9 +61,6 @@ p {
   margin-bottom: 0;
   @include font(16px, 300, 20px);
   color: var(--text-color);
-  @include min-width('medium') {
-    @include font(16px, 300, 20px);
-  }
   @include min-width('large') {
     @include font(18px, 300, 23px);
   }
