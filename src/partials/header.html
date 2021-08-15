@@ -1,111 +1,115 @@
-<!-- HEADER -->
 <header class="as-header">
-  <!--LOGO-->
-  <a href="./index.html" class="as-logo-header"
-    ><img
-      class="as-logo-header__image"
-      srcset="
-        ./images/logo-small.png  101w,
-        ./images/logo-medium.png 125w,
-        ./images/logo-big.png    192w
-      "
-      sizes="(min-width: 1444px) 192px,
+  <div class="as-header-line">
+    <!--LOGO-->
+
+    <a href="./index.html" class="as-logo-header"
+      ><img
+        class="as-logo-header__image"
+        srcset="
+          ./images/logo-small.png  101w,
+          ./images/logo-medium.png 125w,
+          ./images/logo-big.png    192w
+        "
+        sizes="(min-width: 1444px) 192px,
             (min-width: 768px) 125px,
             (min-width: 320px) 101px,
             192px"
-      src="./images/logo-big.png"
-      alt="Логотип компанії"
-  /></a>
+        src="./images/logo-big.png"
+        alt="Логотип компанії"
+    /></a>
 
-  <!-- BURGER_MENU -->
-  <button class="burger-button" type="button">
-    <svg class="burger-button__icon" width="32" height="32">
-      <use href="./images/sprite.svg#icon-burger-menu"></use>
-    </svg>
-  </button>
-
-  <!-- CALL_BUTTON -->
-  <div class="header__call-button">
-    <button class="call-button" type="button">
-      <svg class="call-button__icon" width="24" height="24">
-        <use href="./images/sprite.svg#icon-tel"></use>
+    <!-- BURGER_MENU -->
+    <button class="burger-button" type="button">
+      <svg class="burger-button__icon" width="32" height="32">
+        <use href="./images/sprite.svg#icon-burger-menu"></use>
       </svg>
     </button>
-    <div class="call-button__dropdown">
-      <ul class="call-button__list list">
-        <li class="call-button__item">
-          <a class="call-button__link link" href="tel:+380936432288"> +38 (093) 643 22 88</a>
-        </li>
-        <li class="call-button__item">
-          <a class="call-button__link link" href="tel:+380503454423"> +38 (050) 345 44 23</a>
-        </li>
-      </ul>
-    </div>
-  </div>
 
-  <!-- NAVIGATION -->
-  <nav class="as-pagination">
-    <ul class="as-pagination__list list">
-      <li class="as-pagination__item"><a href="#" class="as-pagination__link">Головна</a></li>
-      <li class="as-pagination__item">
-        <a href="#" class="as-pagination__link">Послуги</a>
-        <ul class="as-pagination__dropdown list">
-          <li class="as-pagination__down-item">
-            <a href="./3d-modeling.html" class="as-pagination__down-link link">3D Моделювання</a>
+    <!-- CALL_BUTTON -->
+    <div class="header__call-button">
+      <button class="call-button" type="button">
+        <svg class="call-button__icon" width="24" height="24">
+          <use href="./images/sprite.svg#icon-tel"></use>
+        </svg>
+      </button>
+      <div class="call-button__dropdown visually-hidden">
+        <ul class="call-button__list list">
+          <li class="call-button__item">
+            <a class="call-button__link link" href="tel:+380936432288"> +38 (093) 643 22 88</a>
           </li>
-          <li class="as-pagination__down-item">
-            <a href="./3d-scanning.html" class="as-pagination__down-link link">3D Сканування</a>
-          </li>
-          <li class="as-pagination__down-item">
-            <a href="./3d-printing.html" class="as-pagination__down-link link">3D Друк</a>
+          <li class="call-button__item">
+            <a class="call-button__link link" href="tel:+380503454423"> +38 (050) 345 44 23</a>
           </li>
         </ul>
-      </li>
-      <li class="as-pagination__item">
-        <a href="./take-order.html" class="as-pagination__link link">Замовити</a>
-      </li>
-      <li class="as-pagination__item">
-        <a href="./contacts.html" class="as-pagination__link link">Контакти</a>
-      </li>
-    </ul>
-  </nav>
+      </div>
+    </div>
 
-  <!-- LANG-BUTTON -->
-  <div class="header__lang-button">
-    <button class="lang-button" lang="en">EN</button>
-    <div class="lang-button__dropdown">
-      <ul class="lang-button__list list">
-        <li class="lang-button__item">
-          <a href="#" class="lang-button__link link" lang="en">ENG</a>
+    <!-- NAVIGATION -->
+    <nav class="as-pagination">
+      <ul class="as-pagination__list list">
+        <li class="as-pagination__item">
+          <a href="./index.html" class="as-pagination__link">Головна</a>
         </li>
-        <li class="lang-button__item">
-          <a href="#" class="lang-button__link link" lang="en">UKR</a>
+        <li class="as-pagination__item">
+          <a href="#" class="as-pagination__link">Послуги</a>
+          <ul class="as-pagination__dropdown list">
+            <li class="as-pagination__down-item">
+              <a href="./3d-modeling.html" class="as-pagination__down-link link">3D Моделювання</a>
+            </li>
+            <li class="as-pagination__down-item">
+              <a href="./3d-scanning.html" class="as-pagination__down-link link">3D Сканування</a>
+            </li>
+            <li class="as-pagination__down-item">
+              <a href="./3d-printing.html" class="as-pagination__down-link link">3D Друк</a>
+            </li>
+          </ul>
         </li>
-        <li class="lang-button__item">
-          <a href="#" class="lang-button__link link" lang="en">RUS</a>
+        <li class="as-pagination__item">
+          <a href="./take-order.html" class="as-pagination__link link">Замовити</a>
+        </li>
+        <li class="as-pagination__item">
+          <a href="./contacts.html" class="as-pagination__link link">Контакти</a>
         </li>
       </ul>
+    </nav>
+
+    <!-- LANG-BUTTON -->
+    <div class="header__lang-button">
+      <button class="lang-button" lang="en">eng</button>
+      <div class="lang-button__dropdown">
+        <ul class="lang-button__list list">
+          <li class="lang-button__item">
+            <a href="#" class="lang-button__link link" lang="en">eng</a>
+          </li>
+          <li class="lang-button__item">
+            <a href="#" class="lang-button__link link" lang="en">ukr</a>
+          </li>
+          <li class="lang-button__item">
+            <a href="#" class="lang-button__link link" lang="en">rus</a>
+          </li>
+        </ul>
+      </div>
     </div>
+
+    <!-- CALL-lIST -->
+
+    <ul class="as-call-list">
+      <li class="as-call-list__item">
+        <a class="as-call-list__link link" href="tel:+380936432288">
+          <svg class="as-call-list__icon" width="14" height="24">
+            <use href="./images/sprite.svg#icon-tel"></use>
+          </svg>
+          +38 (093) 643 22 88</a
+        >
+      </li>
+      <li class="as-call-list__item">
+        <a class="as-call-list__link link" href="tel:+380503454423">
+          <svg class="as-call-list__icon" width="14" height="24">
+            <use href="./images/sprite.svg#icon-tel"></use>
+          </svg>
+          +38 (050) 345 44 23</a
+        >
+      </li>
+    </ul>
   </div>
-
-  <!-- CALL-lIST -->
-
-  <ul class="as-call-list">
-    <li class="as-call-list__item">
-      <a class="as-call-list__link link" href="tel:+380936432288">
-        <svg class="as-call-list__icon" width="14" height="24">
-          <use href="./images/sprite.svg#icon-tel"></use>
-        </svg>
-        +38 (093) 643 22 88</a
-      >
-    </li>
-    <li class="as-call-list__item">
-      <a class="as-call-list__link link" href="tel:+380503454423">
-        <svg class="as-call-list__icon" width="14" height="24">
-          <use href="./images/sprite.svg#icon-tel"></use>
-        </svg>
-        +38 (050) 345 44 23</a
-      >
-    </li>
-  </ul>
 </header>
