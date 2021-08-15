@@ -1,26 +1,8 @@
-.it-container {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 320px) {
-  .it-container {
-    width: 320px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .it-container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1444px) {
-  .it-container {
-    width: 1444px;
-  }
+.gallery_section {
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 .gallery-title {
-  font-family: Montserrat;
   @include font(24px, 700, 30px);
   text-transform: uppercase;
   color: #487996;
@@ -31,7 +13,6 @@
 }
 
 .gallery__card-title {
-  font-family: Montserrat;
   margin-top: 8px;
   @include font(16px, 300, 20px);
   color: #487996;
@@ -53,16 +34,25 @@
     margin-top: calc(-1 * 32px);
   }
   .gallery__list-card {
-    flex-basis: calc((100% - 2 * 18px) / 2);
-    margin-left: 18px;
+    flex-basis: calc((100% - 2 * 20px) / 2);
+    margin-left: 20px;
     margin-top: 32px;
   }
   .gallery__card-title {
+    margin-top: 16px;
     margin-bottom: 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .gallery_section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .gallery-title {
+    margin-bottom: 52px;
+    @include font(48px, 700, 60px);
+  }
   .gallery__list {
     margin-left: calc(-1 * 32px);
     margin-top: calc(-1 * 56px);
@@ -71,5 +61,8 @@
     flex-basis: calc((100% - 2 * 32px) / 2);
     margin-left: 32px;
     margin-top: 56px;
+  }
+  .gallery__card-title {
+    @include font(18px, 300, 23px);
   }
 }
