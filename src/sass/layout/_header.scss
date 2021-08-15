@@ -213,15 +213,6 @@
   }
 }
 
-.as-pagination__dropdown {
-  display: none;
-}
-.as-pagination__item-servises:hover .as-pagination__dropdown {
-  animation: fadeIn;
-  animation-duration: 500ms;
-  display: block;
-}
-
 .as-pagination__list {
   display: flex;
   text-align: center;
@@ -231,6 +222,7 @@
 }
 
 .as-pagination__link {
+  display: block;
   transition: color 250ms linear;
   font-family: var(--header-font);
   font-weight: 400;
@@ -240,11 +232,8 @@
   color: var(--text-color);
 }
 
-.as-pagination__item-servises {
-  position: relative;
-}
-
 .as-pagination__dropdown {
+  display: none;
   position: absolute;
   top: 21px;
   transform: translateX(-25%);
@@ -252,6 +241,17 @@
   padding: 8px 0;
   text-align: center;
 }
+
+.as-pagination__item-servises:hover .as-pagination__dropdown {
+  animation: fadeIn;
+  animation-duration: 500ms;
+  display: block;
+}
+
+.as-pagination__item-servises {
+  position: relative;
+}
+
 .as-pagination__down-item:not(:last-child) {
   margin-bottom: 6px;
 }
