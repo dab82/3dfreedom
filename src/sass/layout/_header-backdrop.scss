@@ -26,3 +26,118 @@
     pointer-events: auto;
   }
 }
+
+.as-backdrop__link,
+.as-backdrop__text {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.as-backdrop__link--active {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--accent-color);
+}
+
+.as-backdrop__link:hover,
+.as-backdrop__link:focus {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--accent-color);
+}
+.as-backdrop__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.as-backdrop__item-servises {
+  margin-bottom: 24px;
+}
+
+.as-backdrop__link-servises {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.as-backdrop__list {
+  text-align: center;
+}
+.as-backdrop__item-servises::before {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  background: #487996;
+  border-radius: 3px 0px;
+}
+.as-backdrop__item-servises {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .as-backdrop__nav {
+    position: relative;
+  }
+  .as-backdrop__list {
+    position: relative;
+  }
+
+  .as-backdrop__nav::before {
+    content: '';
+    display: block;
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    top: -32px;
+    left: 28px;
+    background-image: url(../images/tablet/main/background/img1.jpg);
+    border-radius: 72px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+  .as-backdrop__nav::after {
+    content: '';
+    display: block;
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    top: -22px;
+    left: 606px;
+    background-image: url(../images/tablet/main/background/img2.jpg);
+    border-radius: 0px 0px 70px 0px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+
+  .as-backdrop__list::before {
+    content: '';
+    display: block;
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    top: 252px;
+    left: -17px;
+    background-image: url(../images/tablet/main/background/img3.jpg);
+    border-radius: 72px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+
+  .as-backdrop__list::after {
+    content: '';
+    display: block;
+    width: 74px;
+    height: 74px;
+    position: absolute;
+    top: 195px;
+    left: 607px;
+    background-image: url(../images/tablet/main/background/img4.jpg);
+    border-radius: 45px 45px 0px 0px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+}
