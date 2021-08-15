@@ -1,0 +1,28 @@
+.as-close-button__icon {
+  margin-right: 55px;
+}
+
+.mobile-menu__header {
+  padding: 29px 0 32px;
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  overflow: auto;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 500ms var(--cubic-bezier), visibility 500ms var(--cubic-bezier);
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}

@@ -1,0 +1,119 @@
+<div class="mobile-menu">
+  <section class="as-header mobile-menu__header">
+    <div class="container as-header-line">
+      <!--LOGO-->
+
+      <a href="./index.html" class="as-logo-header"
+        ><img
+          class="as-logo-header__image"
+          srcset="
+            ./images/logo-small.png  101w,
+            ./images/logo-medium.png 125w,
+            ./images/logo-big.png    192w
+          "
+          sizes="(min-width: 1444px) 192px,
+            (min-width: 768px) 125px,
+            (min-width: 320px) 101px,
+            192px"
+          src="./images/logo-big.png"
+          alt="Логотип компанії"
+      /></a>
+
+      <!-- CLOSE_MENU -->
+      <button class="burger-button as-close-button__icon" type="button">
+        <svg class="burger-button__icon" width="23" height="23">
+          <use href="./images/sprite.svg#icon-close-cross"></use>
+        </svg>
+      </button>
+
+      <!-- CALL_BUTTON -->
+      <div class="header__call-button">
+        <button class="call-button" type="button">
+          <svg class="call-button__icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-tel"></use>
+          </svg>
+        </button>
+        <div class="call-button__dropdown">
+          <ul class="call-button__list">
+            <li class="call-button__item">
+              <a class="call-button__link" href="tel:+380936432288"> +38 (093) 643 22 88</a>
+            </li>
+            <li class="call-button__item">
+              <a class="call-button__link" href="tel:+380503454423"> +38 (050) 345 44 23</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- LANG-BUTTON -->
+      <div class="header__lang-button">
+        <button class="lang-button" lang="en">eng</button>
+        <div class="lang-button__dropdown">
+          <ul class="lang-button__list list">
+            <li class="lang-button__item">
+              <a href="#" class="lang-button__link" lang="en">eng</a>
+            </li>
+            <li class="lang-button__item">
+              <a href="#" class="lang-button__link" lang="en">ukr</a>
+            </li>
+            <li class="lang-button__item">
+              <a href="#" class="lang-button__link" lang="en">rus</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CALL-lIST -->
+
+      <ul class="as-call-list">
+        <li class="as-call-list__item">
+          <a class="as-call-list__link link" href="tel:+380936432288">
+            <svg class="as-call-list__icon" width="14" height="24">
+              <use href="./images/sprite.svg#icon-tel"></use>
+            </svg>
+            +38 (093) 643 22 88</a
+          >
+        </li>
+        <li class="as-call-list__item">
+          <a class="as-call-list__link link" href="tel:+380503454423">
+            <svg class="as-call-list__icon" width="14" height="24">
+              <use href="./images/sprite.svg#icon-tel"></use>
+            </svg>
+            +38 (050) 345 44 23</a
+          >
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- NAVIGATION -->
+  <div class="container">
+    <nav class="as-backdrop__nav">
+      <ul class="as-backdrop__list">
+        <li class="as-backdrop__item">
+          <a href="./index.html" class="as-backdrop__link">Головна</a>
+        </li>
+        <li class="as-backdrop__item">
+          <p class="as-backdrop__link">Послуги</p>
+          <ul class="as-backdrop__list-servises">
+            <li class="as-backdrop__item-servises">
+              <a href="./3d-modeling.html" class="as-backdrop__link-servises">3D Моделювання</a>
+            </li>
+            <li class="as-backdrop__item-servises">
+              <a href="./3d-scanning.html" class="as-backdrop__link-servises">3D Сканування</a>
+            </li>
+            <li class="as-backdrop__item-servises">
+              <a href="./3d-printing.html" class="as-backdrop__link-servises">3D Друк</a>
+            </li>
+          </ul>
+        </li>
+        <li class="as-backdrop__item">
+          <a href="./take-order.html" class="as-backdrop__link">Замовити</a>
+        </li>
+        <li class="as-backdrop__item">
+          <a href="./contacts.html" class="as-backdrop__link">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
