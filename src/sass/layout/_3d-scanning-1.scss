@@ -1,6 +1,107 @@
+.YV-scanning-hero {
+  padding-left: 20px;
+  padding-right: 20px;
+  // font-family: 'CeraPro';
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .YV-scanning-hero {
+    padding-left: 60px;
+  }
+}
+@media screen and (min-width: 1444px) {
+  .YV-scanning-hero {
+    padding-left: 189px;
+  }
+}
+
 .YV-scanning-hero__title {
+  // font-family: 'CeraPro';
   @include font(24px, 700, 30px);
-  //   font-family: Cera Pro;
   color: var(--accent-color);
-  border: 1px solid red;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .YV-scanning-hero__title {
+    @include font(36px, 700, 45px);
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .YV-scanning-hero__title {
+    @include font(48px, 700, 60px);
+    margin-bottom: 24px;
+  }
+}
+
+.YV-scanning-hero__description {
+  @include font(16px, 300, 20px);
+  color: var(--text-color);
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &:last-child {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .YV-scanning-hero__description {
+    max-width: 514px;
+  }
+  .YV-scanning-hero {
+    margin-bottom: 52px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .YV-scanning-hero__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -32px;
+    margin-top: -32px;
+  }
+
+  .YV-scanning-hero__description {
+    @include font(18px, 300, 23px);
+    max-width: 515px;
+    margin-top: 24px;
+    margin-left: 32px;
+    flex-basis: calc((100% - 64px) / 2);
+  }
+  .YV-scanning-hero {
+    margin-bottom: 100px;
+  }
+
+  .one {
+    order: 1;
+  }
+  .two {
+    order: 3;
+  }
+  .three {
+    order: 2;
+  }
+}
+.YV-scanning-hero__img {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .YV-scanning-hero__img {
+    position: absolute;
+    right: 0;
+    top: 156px;
+    z-index: -1;
+    margin-bottom: auto;
+  }
+}
+@media screen and (min-width: 1444px) {
+  .YV-scanning-hero__img {
+    position: absolute;
+    right: 175px;
+    top: 106px;
+    z-index: -1;
+    margin-bottom: auto;
+  }
 }
