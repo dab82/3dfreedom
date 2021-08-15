@@ -17,15 +17,9 @@
   width: 101px;
 }
 
-.lang-button__dropdown {
-  display: none;
-}
-
 .as-header-line {
   display: flex;
   align-items: center;
-  width: 278px;
-  margin: 0 auto;
 }
 
 .burger-button,
@@ -52,17 +46,20 @@
   position: relative;
 }
 .call-button__dropdown {
+  animation: fadeIn;
+  animation-duration: 500ms;
   position: absolute;
   top: 35px;
   left: 12px;
   transform: translate(-50%);
   width: 162px;
-  height: 82px;
   padding: 16px 0;
+
   border-radius: 2px;
   text-align: center;
   background-color: #ffffff;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  display: none;
 }
 .call-button__dropdown::before {
   content: '';
@@ -75,6 +72,9 @@
   border-radius: 2px;
   width: 0;
   height: 0;
+}
+.header__call-button:hover .call-button__dropdown {
+  display: block;
 }
 
 .call-button__link {
@@ -89,14 +89,70 @@
   margin-bottom: 10px;
 }
 
+.header__lang-button {
+  position: relative;
+}
+
 .lang-button {
+  cursor: pointer;
   font-family: var(--header-font);
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.01em;
   color: var(--hero-lang-color);
-  text-transform: uppercase;
+}
+
+.lang-button__dropdown {
+  animation: fadeIn;
+  animation-duration: 500ms;
+  position: absolute;
+  top: 35px;
+  left: 12px;
+  transform: translate(-50%);
+  width: 81px;
+  padding: 16px 0;
+
+  border-radius: 2px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.lang-button__dropdown::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -26px;
+  left: 27px;
+  border: 14px solid transparent;
+  border-bottom: 18px solid #ffffff;
+  border-radius: 2px;
+  width: 0;
+  height: 0;
+}
+
+.header__lang-button:hover .lang-button__dropdown {
+  display: block;
+}
+
+.lang-button__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.lang-button__link {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+  transition: color 250ms linear;
+}
+
+.lang-button__link:hover {
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -114,9 +170,6 @@
   }
   .lang-button {
     margin-right: 28px;
-  }
-  .as-header-line {
-    width: 648px;
   }
 }
 .as-call-list__link {
@@ -146,7 +199,7 @@
     width: 192px;
   }
   .as-logo-header {
-    margin-right: 213px;
+    margin-right: 193px;
   }
   .burger-button {
     display: none;
@@ -158,6 +211,9 @@
 
 .as-pagination__dropdown {
   display: none;
+}
+.as-pagination__item:hover > .as-pagination__dropdown {
+  display: block;
 }
 
 .as-pagination__list {
