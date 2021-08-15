@@ -1,36 +1,3 @@
-сброс,
-потом удалить h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-.conteiner {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.list {
-  list-style: none;
-}
-.link {
-  text-decoration: none;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 // 320 ===========
 
 .take-order__hero {
@@ -41,19 +8,12 @@ img {
   // background-position: center;
   // background-size: cover;
   // background-position-y: 106px;
-
-  // @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
-  //   (min-resolution: 192dpi) and (min-width: 320px),
-  //   (min-resolution: 2dppx) and (min-width: 320px) {
-  //
-  //     background-image: url('');
-  //     background-size: cover;
-  // }
 }
 
 .take-order__hero-title {
   @include font(24px, 700, 30px);
-  color: #487996;
+  color: var(--accent-color);
+  text-transform: uppercase;
 
   margin-bottom: 16px;
 
@@ -66,18 +26,42 @@ img {
     background-position: center;
     width: 100%;
     height: 171px;
+    background-size: cover;
     // background-image: url(../images/mobile/take-over/img0.jpg);
   }
 }
 
-.take-order__hero-text {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.25;
+//ломается, почему-то увеличивется
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+//   (min-resolution: 192dpi) and (min-width: 320px),
+//   (min-resolution: 2dppx) and (min-width: 320px) {
+//   .take-order__hero-title::after {
+//     content: url(../images/mobile/take-over/img0@2x.jpg);
+//   }
+// }
 
-  color: #2b2b2b;
+.take-order__hero-text {
+  @include font(16px, 300, 20px);
+
+  color: var(--text-color);
 
   &:not(:last-child) {
     margin-bottom: 16px;
+  }
+}
+
+// 768+
+@media screen and (min-width: 768px) {
+  .take-order__hero-container {
+    display: flex;
+    align-items: center;
+  }
+  .take-order__hero-title {
+    @include font(36px, 700, 45px);
+
+    &::after {
+      margin-top: 24px;
+      content: url(../images/tablet/take-order/img0.jpg);
+    }
   }
 }
