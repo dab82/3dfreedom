@@ -1,0 +1,94 @@
+// Header
+header {
+  padding: 29px 0 32px;
+  @include min-width('medium') {
+    padding: 20px 0 35px;
+  }
+  @include min-width('large') {
+    padding: 40px 0 24px;
+  }
+}
+// Footer
+footer {
+  padding: 32px 0;
+  @include min-width('large') {
+    padding: 30px 0;
+  }
+}
+// Title
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--accent-color);
+}
+h1 {
+  text-align: center;
+  color: var(--text-color);
+  @include font(18px, 400, 21px);
+  @include min-width('medium') {
+    @include font(24px, 400, 28px);
+  }
+  @include min-width('large') {
+    @include font(48px, 400, 56px);
+  }
+}
+h2 {
+  @include font(24px, 700, 30px);
+  @include min-width('medium') {
+    @include font(36px, 700, 45px);
+  }
+  @include min-width('large') {
+    @include font(48px, 700, 60px);
+  }
+}
+h3 {
+  @include font(18px, 700, 23px);
+  @include min-width('medium') {
+    @include font(24px, 700, 30px);
+  }
+  @include min-width('large') {
+    @include font(36px, 700, 45px);
+  }
+}
+// Paragraph
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  @include font(16px, 300, 20px);
+  color: var(--text-color);
+  @include min-width('large') {
+    @include font(18px, 300, 23px);
+  }
+}
+// List
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+// Link
+a {
+  text-decoration: none;
+  color: inherit;
+}
+// Image
+img {
+  display: block;
+  width: 100%;
+}
+// Address
+address {
+  font-style: normal;
+}
+// Button
+button {
+  padding: 0;
+  border: none;
+}

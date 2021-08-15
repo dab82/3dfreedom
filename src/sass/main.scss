@@ -1,28 +1,45 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
-// Стили для файла с примером HTML-фрагмента
-@import './example';
-// пусть пока будет
-
 // UTILS
-// @import './utils/variables';
-// @import './utils/visually-hidden';
-// @import './utils/mixin';
-// @import './utils/';
+@import './utils/variables';
+@import './utils/breakpoinnts';
+@import './utils/visually-hidden';
+@import './utils/mixin';
 
 // BASE
-// @import './base/body';
-// @import './base/common';
-// @import './base/';
+@import './base/body';
+@import './base/common';
+@import './base/fonts';
 
 // COMPONENTS
-// @import './components/logo';
-// @import './components/backdrop';
-// @import './components/order-btn';
-// @import './components/send-btn';
+@import './components/container';
+@import './components/main-button';
+@import './components/logo';
 
 // LAYOUT
-// @import './layout/';
+// Header
+@import './layout/header';
+@import './layout/header-backdrop';
+// Main
+@import './layout/main-hero';
+@import './layout/main-1';
+@import './layout/main-2';
+@import './layout/main-page-gallery';
+@import './layout/main-page-more-photo';
+// 3d modeling
+@import './layout/3d-modeling-hero';
+@import './layout/3d-modeling-1';
+@import './layout/3d-modeling-2';
+// 3d scanning
+@import './layout/3d-scanning-hero';
+@import './layout/3d-scanning-1';
+@import './layout/3d-scanning-2';
+// 3d printing
+@import './layout/3d-printing-1';
+@import './layout/3d-printing-2';
+// Take order
+@import './layout/take-order-hero';
+@import './layout/take-order-contacts';
+// Contacts
+@import './layout/contacts-hero';
+@import './layout/contacts-contacts';
+// Footer
+@import './layout/footer';

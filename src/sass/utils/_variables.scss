@@ -1,15 +1,19 @@
-// ---палитра---
 :root {
+  // Color
   --text-color: #2b2b2b;
   --accent-color: #487996;
   --icon-pseudoelement-color: #008cef;
-  --btn-footer-bg-color: #f5f5fa;
-  --form-placeholder-color: #cdcdcd;
-  --form-input-text-color: #ffffff;
-  --form-input-bg-color: rgba(72, 121, 150, 0.5);
   --hero-lang-color: #bdbdbd;
+  --form-input-text-color: #ffffff;
+  --form-placeholder-color: #cdcdcd;
+  --form-input-bg-color: rgba(72, 121, 150, 0.5);
+  --btn-footer-bg-color: #f5f5fa;
+  --backdrop-bg-color: rgba(43, 43, 43, 0.8);
+  // Shadow
   --btn-box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
   --footer-box-shadow: 5px 2px 5px 8px rgba(72, 121, 150, 0.1);
-  --backdrop-bg-color: rgba(43, 43, 43, 0.8);
+  // Fonts
+  --main-font: 'Cera Pro', sans-serif;
+  --header-font: 'Caviar Dreams', sans-serif;
 }
