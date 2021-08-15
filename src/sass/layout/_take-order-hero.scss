@@ -32,7 +32,6 @@ img {
 }
 
 .take-order__hero {
-  padding-top: 32px;
   padding-bottom: 52px;
 
   //   background-image: url();
@@ -45,7 +44,7 @@ img {
   //   (min-resolution: 192dpi) and (min-width: 320px),
   //   (min-resolution: 2dppx) and (min-width: 320px) {
   //
-  //     background-image: url('../images/mobile-hero@2x.jpg');
+  //     background-image: url('');
   //     background-size: cover;
   // }
 }
@@ -53,11 +52,23 @@ img {
 .take-order__hero-title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.25;
+  line-height: 30px;
 
   color: #487996;
 
-  margin-bottom: 203px;
+  margin-bottom: 16px;
+
+  &::after {
+    margin-top: 16px;
+    content: url(../images/mobile/take-over/img0.jpg);
+    display: block;
+    // background-image: url(../images/mobile/take-over/img0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 171px;
+    // background-size: cover;
+  }
 }
 
 .take-order__hero-text {
