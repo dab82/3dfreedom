@@ -2,39 +2,39 @@
   @include min-width('small') {
     background-image: url(../images/mobile/img1.png);
     @include retina('../images//mobile/img1@2x.png', 'small');
-    background-size: 320px;
+    background-size: map-get($min-widths, 'small');
   }
   @include min-width('medium') {
     background-image: url(../images/tablet/img1.png);
     @include retina('../images//tablet/img1@2x.png', 'medium');
-    background-size: 768px;
+    background-size: map-get($min-widths, 'medium');
   }
   @include min-width('large') {
     background-image: url(../images/desktop/img1.png);
     @include retina('../images//desktop/img1@2x.png', 'large');
-    background-size: 1728px;
+    background-size: map-get($min-widths, 'large');
   }
   background-repeat: no-repeat;
-  background-origin: padding-box;
+  background-origin: border-box;
   background-position: top;
 }
 .side-bg {
   @include min-width('small') {
     background-image: url(../images/mobile/img2.png);
     @include retina('../images//mobile/img2@2x.png', 'small');
-    background-size: 320px;
+    background-size: map-get($min-widths, 'small');
   }
   @include min-width('medium') {
     background-image: url(../images/tablet/img2.png);
     @include retina('../images//tablet/img2@2x.png', 'medium');
-    background-size: 768px;
+    background-size: map-get($min-widths, 'medium');
   }
   @include min-width('large') {
     background-image: url(../images/desktop/img2.png);
     @include retina('../images//desktop/img2@2x.png', 'large');
-    background-size: 1440px;
+    background-size: map-get($min-widths, 'large');
   }
   background-repeat: no-repeat;
-  background-origin: padding-box;
+  background-origin: border-box;
   background-position: top;
 }
