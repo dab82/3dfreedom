@@ -7,11 +7,6 @@
   text-transform: uppercase;
 
   margin-bottom: 28px;
-
-  @media screen and (min-width: 768px) {
-    text-align: center;
-    @include font(24px, 700, 30px);
-  }
 }
 
 .take-order__form {
@@ -26,7 +21,6 @@
   color: var(--text-color);
 }
 
-// поменять на плавающую ширину, и ограничить начиная от планшетов
 .take-order__form-input {
   width: 100%;
 
@@ -38,9 +32,6 @@
     text-transform: capitalize;
     color: var(--text-color);
   }
-  //   @media screen and (min-width: 768px) {
-  //     min-width: 420px;
-  //   }
 }
 
 .take-order__form-list {
@@ -50,6 +41,15 @@
 
   border: none;
   border-bottom: 1px solid #487996;
+  appearance: none;
+
+  background-image: url(../images/mobile/take-over/polygon-open.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  &:hover,
+  &:focus {
+    background-image: url(../images/mobile/take-over/polygon-close.svg);
+  }
 }
 
 .take-order__message {
@@ -80,6 +80,11 @@
   margin-bottom: 52px;
 }
 
+.take-order__contact-wrapper:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+  }
+}
 .take-order__contact-data-text {
   @include font(18px, 700, 23px);
 
@@ -113,7 +118,14 @@
   flex-direction: column;
 }
 
+// 768+
+
 @media screen and (min-width: 768px) {
+  .take-order__contacts-title {
+    text-align: center;
+    @include font(24px, 700, 30px);
+  }
+
   .take-order__form {
     margin: 0 auto;
     width: 420px;
@@ -132,5 +144,54 @@
   }
   .take-order__time {
     margin-left: auto;
+  }
+}
+
+// 1444+
+@media screen and (min-width: 1444px) {
+  .take-order__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .take-order__contacts-title {
+    @include font(36px, 700, 45px);
+  }
+
+  .take-order__form-input {
+    &::placeholder {
+      @include font(18px, 400, 20px);
+    }
+  }
+
+  .take-order__contact-data {
+    display: block;
+  }
+
+  .take-order__contact-wrapper {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .take-order__contact-data-text {
+    margin-bottom: 18px;
+  }
+
+  .take-order__contact-data-text {
+    @include font(36px, 700, 45px);
+  }
+
+  .take-order__contact-data-item {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+  .take-order__contact-data-link {
+    @include font(18px, 400, 20px);
+  }
+  .take-order__contact-data-item {
+    display: block;
+    @include font(18px, 400, 20px);
   }
 }
