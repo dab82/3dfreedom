@@ -38,7 +38,6 @@
 }
 
 .call-button {
-  margin-right: 21px;
   fill: var(--icon-pseudoelement-color);
 }
 
@@ -91,9 +90,11 @@
 
 .header__lang-button {
   position: relative;
+  margin-left: auto;
 }
 
 .lang-button {
+  margin-left: auto;
   cursor: pointer;
   font-family: var(--header-font);
   font-weight: 700;
@@ -101,6 +102,7 @@
   line-height: 18px;
   letter-spacing: 0.01em;
   color: var(--hero-lang-color);
+  text-transform: uppercase;
 }
 
 .lang-button__dropdown {
@@ -133,7 +135,8 @@
   height: 0;
 }
 
-.header__lang-button:hover .lang-button__dropdown {
+.header__lang-button:hover .lang-button__dropdown,
+.lang-button:focus .lang-button__dropdown {
   display: block;
 }
 
@@ -151,7 +154,8 @@
   transition: color 250ms linear;
 }
 
-.lang-button__link:hover {
+.lang-button__link:hover,
+.lang-button__link:focus {
   color: var(--accent-color);
 }
 
@@ -212,24 +216,62 @@
 .as-pagination__dropdown {
   display: none;
 }
-.as-pagination__item:hover > .as-pagination__dropdown {
+.as-pagination__item-servises:hover .as-pagination__dropdown {
+  animation: fadeIn;
+  animation-duration: 500ms;
   display: block;
 }
 
 .as-pagination__list {
   display: flex;
   text-align: center;
-  margin-right: 109px;
 }
 .as-pagination__item:not(:last-child) {
   margin-right: 54px;
 }
 
 .as-pagination__link {
+  transition: color 250ms linear;
   font-family: var(--header-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.01em;
   color: var(--text-color);
+}
+
+.as-pagination__item-servises {
+  position: relative;
+}
+
+.as-pagination__dropdown {
+  position: absolute;
+  top: 21px;
+  transform: translateX(-25%);
+  width: 144px;
+  padding: 8px 0;
+  text-align: center;
+}
+.as-pagination__down-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.as-pagination__down-link {
+  font-family: var(--header-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+  transition: color 250ms linear;
+}
+
+.as-pagination__down-link:hover,
+.as-pagination__down-link:focus {
+  color: var(--accent-color);
+}
+
+.as-pagination__link:hover,
+.as-pagination__link:focus {
+  color: var(--accent-color);
 }
