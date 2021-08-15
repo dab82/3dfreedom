@@ -1,0 +1,35 @@
+.lo-create-model {
+  padding-top: 0;
+  padding-bottom: 76px;
+}
+
+.lo-create-model__title {
+  margin-bottom: 16px;
+  padding-right: 6px;
+  @include font(16px, 700, 20px);
+  color: var(--accent-color);
+}
+
+.lo-create-model__gallery {
+  @include flex-center($jc: space-between);
+  margin-top: -16px;
+  margin-left: -10px;
+  margin-bottom: 52px;
+}
+
+.lo-create-model__img {
+  margin-top: 16px;
+  margin-left: 10px;
+}
+
+.img-border-left {
+  border-radius: 0px 0px 0px 50px;
+}
+
+.img-border-right {
+  border-radius: 50px 0px;
+}
+
+.lo-order-form-btn {
+  padding-bottom: 76px;
+}

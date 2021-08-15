@@ -1,4 +1,50 @@
 .lo-methods-creations {
-  padding-top: 52px;
+  padding-top: 0px;
   padding-bottom: 52px;
+}
+
+.lo-methods-creations__title {
+  margin-bottom: 16px;
+  padding-right: 31px;
+  color: var(--accent-color);
+}
+
+.lo-methods-creations__list {
+  margin-bottom: 32px;
+}
+
+.lo-methods-creations__item {
+  padding-left: 17px;
+  position: relative;
+  @include font(16px, 300, 20px);
+
+  color: var(--text-color);
+}
+
+.lo-methods-creations__item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 7px;
+  height: 7px;
+  background-color: var(--accent-color);
+  border-radius: 3px 0px;
+}
+
+.lo-methods-creations__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.lo-methods-creations-thumb {
+  width: 280px;
+  height: 164px;
+  background-image: url(../images/mobile/3d-modeling/img0.png);
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url(../images/mobile/3d-modeling/img0@2x.png);
+    }
+  }
 }
