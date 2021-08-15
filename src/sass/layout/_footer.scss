@@ -27,9 +27,7 @@
 }
 
 .footer-nav__link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(16px, 400, 20px);
   letter-spacing: 0.01em;
   color: var(--text-color);
 }
@@ -51,9 +49,7 @@
 }
 
 .footer-social__link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(16px, 400, 20px);
   letter-spacing: 0.01em;
   color: var(--text-color);
 }
@@ -67,18 +63,14 @@
 }
 
 .mail-address__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(16px, 400, 20px);
   letter-spacing: 0.01em;
   color: var(--text-color);
   margin-bottom: 8px;
 }
 
 .mail-address__link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(16px, 400, 20px);
   letter-spacing: 0.01em;
   color: #487996;
 }
@@ -89,9 +81,7 @@
 }
 
 .tel-numbers__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(16px, 400, 20px);
   letter-spacing: 0.01em;
   color: var(--text-color);
   margin-bottom: 8px;
@@ -106,9 +96,7 @@
 }
 
 .number__link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(16px, 400, 20px);
   letter-spacing: 0.01em;
   color: #487996;
 }
