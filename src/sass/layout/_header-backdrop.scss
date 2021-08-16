@@ -14,7 +14,7 @@
   background-position: top;
 }
 
-.as-close-button__icon {
+.close-button__icon {
   margin-right: 55px;
   padding: 5px 0 5px;
 }
@@ -23,7 +23,7 @@
   padding: 29px 0 32px;
 }
 
-@media screen and (min-width: 768px) {
+@include min-width('medium') {
   .mobile-menu__header {
     padding: 20px 0 35px;
   }
@@ -50,47 +50,43 @@
   }
 }
 
-.as-backdrop__link,
-.as-backdrop__text {
+.backdrop__link,
+.backdrop__text {
   font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+  @include font(24px, 700, 30px);
   color: var(--accent-color);
   text-transform: uppercase;
 }
 
-.as-backdrop__link--active {
+.backdrop__link--active {
   color: transparent;
   -webkit-text-stroke: 1px var(--accent-color);
 }
 
-.as-backdrop__link:hover,
-.as-backdrop__link:focus {
+.backdrop__link:hover,
+.backdrop__link:focus {
   color: transparent;
   -webkit-text-stroke: 1px var(--accent-color);
 }
-.as-backdrop__item:not(:last-child) {
+.backdrop__item:not(:last-child) {
   margin-bottom: 24px;
 }
 
-.as-backdrop__item-servises {
+.backdrop__item-servises {
   margin-bottom: 24px;
 }
 
-.as-backdrop__link-servises {
+.backdrop__link-servises {
   font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
+  @include font(24px, 500, 30px);
   text-align: center;
   color: var(--accent-color);
 }
 
-.as-backdrop__list {
+.backdrop__list {
   text-align: center;
 }
-.as-backdrop__item-servises::before {
+.backdrop__item-servises::before {
   content: '';
   display: block;
   width: 7px;
@@ -99,8 +95,6 @@
   background: var(--accent-color);
   border-radius: 3px 0px;
 }
-.as-backdrop__item-servises {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.backdrop__item-servises {
+  @include flex-center;
 }
