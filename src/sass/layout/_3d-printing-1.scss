@@ -1,15 +1,15 @@
-.eb_we-create-title {
+.we-create-title {
   margin-bottom: 16px;
 }
 
-.eb_we-create.list {
+.we-create.list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -15px;
   margin-left: -15px;
 }
 
-.eb_we-create__item {
+.we-create__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +25,7 @@
   background: #ffffff;
 }
 
-.eb_we-create__item-name {
+.we-create__item-name {
   font-style: normal;
   @include font(14, 400, 18);
   font-size: 14px;
@@ -33,14 +33,14 @@
   text-align: center;
 }
 
-.eb_we-create__img {
+.we-create__img {
   width: 100%;
 }
 
 // TABLET
 
 @media screen and (min-width: 768px) and (max-width: 1443px) {
-  .eb_we-create-title {
+  .we-create-title {
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -49,15 +49,15 @@
     margin-bottom: 35px;
   }
 
-  .eb_we-create.list {
+  .we-create.list {
     flex-wrap: nowrap;
   }
 
-  .eb_we-create__item {
+  .we-create__item {
     height: 182px;
   }
 
-  .eb_we-create-item-four {
+  .we-create-item-four {
     margin-top: 26px;
   }
 }
@@ -65,7 +65,7 @@
 // DESKTOP
 
 @media screen and (min-width: 1444px) {
-  .eb_we-create-title {
+  .we-create-title {
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -74,13 +74,13 @@
     margin-bottom: 24px;
   }
 
-  .eb_we-create.list {
+  .we-create.list {
     flex-wrap: nowrap;
     margin-top: -20px;
     margin-left: -20px;
   }
 
-  .eb_we-create__item {
+  .we-create__item {
     margin-left: 20px;
     margin-right: 20px;
     width: 250px;
@@ -89,16 +89,16 @@
     justify-content: center;
   }
 
-  .eb_we-create__item-name {
+  .we-create__item-name {
     margin-top: 10px;
     max-width: 180px;
   }
 
-  .eb_we-create-item-four {
+  .we-create-item-four {
     margin-top: 26px;
   }
 
-  .eb_we-create-picture {
+  .we-create-picture {
     display: flex;
     align-items: center;
     height: 162px;
