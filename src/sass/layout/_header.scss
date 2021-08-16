@@ -1,23 +1,20 @@
-@media screen and (max-width: 767px) {
-  .as-call-list {
+@include max-width('medium') {
+  .call-list {
     display: none;
   }
 }
 
-@media screen and (max-width: 1443px) {
-  .as-pagination {
+@include max-width('large') {
+  .pagination {
     display: none;
   }
 }
 
-.as-logo-header {
+.logo-header {
   margin-right: 23px;
 }
-.as-logo-header__image {
-  width: 101px;
-}
 
-.as-header-line {
+.header-line {
   display: flex;
   align-items: center;
 }
@@ -25,9 +22,7 @@
 .burger-button,
 .call-button,
 .lang-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
   line-height: 0;
   background-color: transparent;
 }
@@ -81,9 +76,7 @@
 
 .call-button__link {
   font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font(16px, 400, 20px);
   letter-spacing: 0.01em;
   color: var(--text-color);
 }
@@ -100,9 +93,7 @@
   margin-left: auto;
   cursor: pointer;
   font-family: var(--header-font);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
+  @include font(14px, 700, 18px);
   letter-spacing: 0.01em;
   color: var(--hero-lang-color);
   text-transform: uppercase;
@@ -150,12 +141,11 @@
 
 .lang-button__link {
   font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font(16px, 400, 20px);
   letter-spacing: 0.01em;
   color: var(--text-color);
   transition: color 250ms linear;
+  text-transform: uppercase;
 }
 
 .lang-button__link:hover,
@@ -163,12 +153,9 @@
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 768px) {
-  .as-logo-header {
+@include min-width('medium') {
+  .logo-header {
     margin-right: 174px;
-  }
-  .as-logo-header__image {
-    width: 125px;
   }
   .burger-button {
     margin-right: 86px;
@@ -180,33 +167,28 @@
     margin-right: 28px;
   }
 }
-.as-call-list__link {
+.call-list__link {
   font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font(16px, 400, 20px);
   letter-spacing: 0.01em;
   color: var(--text-color);
 }
 
-.as-call-list__icon {
+.call-list__icon {
   fill: var(--icon-pseudoelement-color);
   margin-right: 4px;
 }
-.as-call-list__link {
+.call-list__link {
   display: flex;
   align-items: center;
 }
 
-@media screen and (min-width: 1444px) {
-  .as-header-line {
+@include min-width('large') {
+  .header-line {
     width: 1280px;
     align-items: flex-start;
   }
-  .as-logo-header__image {
-    width: 192px;
-  }
-  .as-logo-header {
+  .logo-header {
     margin-right: 193px;
   }
   .burger-button {
@@ -217,35 +199,33 @@
   }
 }
 
-.as-pagination__list {
+.pagination__list {
   display: flex;
   text-align: center;
 }
-.as-pagination__item:not(:last-child) {
+.pagination__item:not(:last-child) {
   margin-right: 54px;
 }
 
-.as-pagination__link {
+.pagination__link {
   display: block;
   transition: color 250ms linear;
   font-family: var(--header-font);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+  @include font(18px, 400, 21px);
   letter-spacing: 0.01em;
   color: var(--text-color);
 }
 
-.as-pagination__link:hover,
-.as-pagination__link:focus {
+.pagination__link:hover,
+.pagination__link:focus {
   color: var(--accent-color);
 }
 
-.as-pagination__item-servises {
+.pagination__item-servises {
   position: relative;
 }
 
-.as-pagination__dropdown {
+.pagination__dropdown {
   display: none;
   position: absolute;
   top: 21px;
@@ -255,28 +235,26 @@
   text-align: center;
 }
 
-.as-pagination__link-servises:hover + .as-pagination__dropdown,
-.as-pagination__link-servises:focus + .as-pagination__dropdown {
+.pagination__link-servises:hover + .pagination__dropdown,
+.pagination__link-servises:focus + .pagination__dropdown {
   animation: fadeIn;
   animation-duration: 500ms;
   display: block;
 }
 
-.as-pagination__down-item:not(:last-child) {
+.pagination__down-item:not(:last-child) {
   margin-bottom: 6px;
 }
 
-.as-pagination__down-link {
+.pagination__down-link {
   font-family: var(--header-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  @include font(16px, 400, 19px);
   letter-spacing: 0.01em;
   color: var(--text-color);
   transition: color 250ms linear;
 }
 
-.as-pagination__down-link:hover,
-.as-pagination__down-link:focus {
+.pagination__down-link:hover,
+.pagination__down-link:focus {
   color: var(--accent-color);
 }
