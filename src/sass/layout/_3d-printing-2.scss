@@ -54,25 +54,3 @@
     color: #fff;
   }
 }
-
-.main-button {
-  display: block;
-  cursor: pointer;
-  background-color: var(--btn-footer-bg-color);
-  width: 280px;
-  height: 56px;
-  padding: 16px 0;
-  border-radius: 30.5px;
-  outline: none;
-  box-shadow: var(--btn-box-shadow);
-  @include font(15px, 700, 24px);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--accent-color);
-}
-.main-button:hover,
-.main-button:focus {
-  background-color: var(--icon-pseudoelement-color);
-  color: #fff;
-}
