@@ -29,7 +29,7 @@
 
         <label class="take-order__form-field" for="plastic-types"></label>
         <select class="take-order__form-list" id="plastic-types" name="plastic-types">
-          <option class="take-order__form-option" selected="selected">Виды пластика</option>
+          <option class="take-order__form-option" selected="selected">Види пластика</option>
           <option class="take-order__form-option" value="PLA">PLA</option>
           <option class="take-order__form-option" value="ABS">ABS</option>
           <option class="take-order__form-option" value="PVA">PVA</option>
@@ -60,16 +60,23 @@
 
         <label class="take-order__form-field">
           Повідомлення
-          <textarea
-            class="take-order__message"
-            name="message"
-            placeholder="Залишіть своє повідомлення"
-          ></textarea>
-          <input class="take-order__message-input" name="edd-file" type="file" />
-          <p class="take-order__message-text">
-            *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
-          </p>
+          <div class="textaria-wrap">
+            <textarea
+              class="take-order__message"
+              name="message"
+              placeholder="Залишіть своє повідомлення"
+            ></textarea>
+            <svg class="textaria__icon" width="22" height="20">
+              <use href="./images/sprite.svg#icon-clip"></use>
+            </svg>
+          </div>
         </label>
+
+        <input class="take-order__message-input visually-hidden" name="edd-file" type="file" />
+        <label class="take-order__message-text">
+          *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+        </label>
+
         <button class="main-button take-order__btn" type="submit">Відправити</button>
       </form>
     </div>

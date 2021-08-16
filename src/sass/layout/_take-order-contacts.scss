@@ -51,7 +51,17 @@
     background-image: url(../images/mobile/take-over/polygon-close.svg);
   }
 }
-
+.textaria-wrap {
+  position: relative;
+  margin-top: 4px;
+  height: 199px;
+}
+.textaria__icon {
+  position: absolute;
+  padding: 0;
+  bottom: 23px;
+  right: 22px;
+}
 .take-order__message {
   width: 100%;
   height: 199px;
@@ -66,16 +76,19 @@
   color: var(--text-color);
 }
 
-// добавить opacity и вынести в "скрепку"?
+// hover на "скрепку"?
 .take-order__message-input {
+  max-width: 100%;
   color: transparent;
 }
 .take-order__message-text {
   @include font(16px, 400, 20px);
   color: var(--form-placeholder-color);
+  margin-top: 4px;
 }
 
 .take-order__btn {
+  max-width: 100%;
   margin-top: 24px;
   margin-bottom: 52px;
 }
@@ -108,7 +121,6 @@
 .take-order__contact-data-link,
 .take-order__contact-data-item {
   @include font(16px, 400, 20px);
-  text-transform: capitalize;
 
   color: var(--text-color);
 }
