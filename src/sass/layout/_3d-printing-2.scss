@@ -54,3 +54,30 @@
     color: #fff;
   }
 }
+
+//TABLET
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .eb_processes__description-part {
+    width: 381px;
+  }
+
+  .eb_processes__description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .eb_processes__item {
+    display: flex;
+  }
+
+  .eb_processes__img {
+    margin-right: 20px;
+  }
+
+  .eb_order-button {
+    width: 277px;
+    margin-top: 58px;
+  }
+}

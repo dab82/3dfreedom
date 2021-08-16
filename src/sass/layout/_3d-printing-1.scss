@@ -38,3 +38,20 @@
 .eb_we-create__img {
   width: 100%;
 }
+
+// TABLET
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .eb_we-create-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+
+    margin-bottom: 24px;
+  }
+
+  .eb_we-create.list {
+    flex-wrap: nowrap;
+  }
+}
