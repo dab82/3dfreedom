@@ -81,3 +81,52 @@
     margin-top: 55px;
   }
 }
+
+// DESKTOP
+
+@media screen and (min-width: 1444px) {
+  .eb_processes__item {
+    display: flex;
+    margin-top: 100px;
+  }
+
+  .eb_processes__description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 78px;
+  }
+
+  .eb_processes__description-part {
+    width: 720px;
+    font-size: 18px;
+    line-height: 1.44;
+  }
+
+  .eb_description-title {
+    font-size: 18px;
+    line-height: 1.28;
+  }
+
+  .eb_order-button {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .eb_processes__description-part:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .eb_processes__description-part:first-child {
+    margin-top: 0;
+  }
+
+  .eb_processes__img {
+    margin: 0 auto;
+  }
+
+  .eb_order-button {
+    width: 277px;
+    margin-top: 52px;
+    margin-left: 78px;
+  }
+}
