@@ -1,85 +1,120 @@
-<section class="take-order">
-  <h2 class="take-order__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
-  <form class="take-order__form" name="contact-form" action="#">
-    <label class="take-order__form-field">
-      Ім’я
-      <input
-        type="text"
-        name="user-name"
-        required
-        minlength="2"
-        pattern="[a-zA-Zа-яёА-ЯЁ]+"
-        title="Имя должно содержать символы кирилицы или латиницы"
-        class="take-order__form-input"
-      />
-    </label>
+<section class="take-order__contacts">
+  <div class="take-order__container container">
+    <div>
+      <h3 class="take-order__contacts-title">Зв’яжіться з нами</h3>
 
-    <label class="take-order__form-field">
-      email
-      <input type="email" name="user-mail" required class="take-order__form-input" />
-    </label>
+      <form class="take-order__form" name="contact-form" action="#">
+        <label class="take-order__form-field">
+          <input
+            class="take-order__form-input"
+            type="text"
+            name="user-name"
+            placeholder="Ім’я"
+            required
+            minlength="2"
+            pattern="[a-zA-Zа-яёА-ЯЁ]+"
+            title="Имя должно содержать символы кирилицы или латиницы"
+          />
+        </label>
 
-    <label for="plastic-types" class="take-order__form-field">Види пластика</label>
-    <select id="plastic-types" name="plastic-types">
-      <option value="PLA">PLA</option>
-      <option value="ABS">ABS</option>
-      <option value="PVA">PVA</option>
-      <option value="Nylone">Nylone</option>
-      <option value="HIPS">HIPS</option>
-    </select>
+        <label class="take-order__form-field">
+          <input
+            class="take-order__form-input"
+            type="email"
+            name="user-mail"
+            placeholder="email"
+            required
+          />
+        </label>
 
-    <label for="quality" class="take-order__form-field">Якість друку</label>
-    <select id="quality" name="quality">
-      <option value="300">300 мікрон</option>
-      <option value="200">200 мікрон</option>
-      <option value="100">100 мікрон</option>
-      <option value="help">Труднощі у виборі - ми допоможемо</option>
-    </select>
+        <label class="take-order__form-field" for="plastic-types"></label>
+        <select class="take-order__form-list" id="plastic-types" name="plastic-types">
+          <option class="take-order__form-option" selected="selected">Виды пластика</option>
+          <option class="take-order__form-option" value="PLA">PLA</option>
+          <option class="take-order__form-option" value="ABS">ABS</option>
+          <option class="take-order__form-option" value="PVA">PVA</option>
+          <option class="take-order__form-option" value="Nylone">Nylone</option>
+          <option class="take-order__form-option" value="HIPS">HIPS</option>
+        </select>
 
-    <label for="color" class="take-order__form-field">Колір</label>
-    <select id="color" name="color">
-      <option value="White">White</option>
-      <option value="Black">Black</option>
-      <option value="Blue">Blue</option>
-      <option value="Yelow">Yelow</option>
-      <option value="Green">Green</option>
-      <option value="Orange">Orange</option>
-      <option value="Red">Red</option>
-    </select>
+        <label class="take-order__form-field" for="quality"></label>
+        <select class="take-order__form-list" id="quality" name="quality">
+          <option selected="selected">Якість друку</option>
+          <option value="300">300 мікрон</option>
+          <option value="200">200 мікрон</option>
+          <option value="100">100 мікрон</option>
+          <option value="help">Труднощі у виборі - ми допоможемо</option>
+        </select>
 
-    <label>
-      Повідомлення
-      <textarea name="message" placeholder="Залишіть своє повідомлення"></textarea>
-      <input name="edd-file" type="file" />
-      <p>*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
-    </label>
-    <button type="submit" class="">Відправити</button>
-  </form>
+        <label class="take-order__form-field" for="color"></label>
+        <select class="take-order__form-list" id="color" name="color">
+          <option selected="selected">Колір</option>
+          <option value="White">White</option>
+          <option value="Black">Black</option>
+          <option value="Blue">Blue</option>
+          <option value="Yelow">Yelow</option>
+          <option value="Green">Green</option>
+          <option value="Orange">Orange</option>
+          <option value="Red">Red</option>
+        </select>
 
-  <div class="take-order__contacts">
-    <p>ТЕЛЕФОНИ</p>
-    <ul class="take-order__contacts-list">
-      <li class="take-order__contacts-item">
-        <a class="take-order__contacts-link" href="tel:+380957384551">+38 (095) -73-84-551</a>
-      </li>
-      <li class="take-order__contacts-item">
-        <a class="take-order__contacts-link" href="tel:+380980025235">+38 (098) -00-25-235</a>
-      </li>
-    </ul>
+        <label class="take-order__form-field">
+          Повідомлення
+          <textarea
+            class="take-order__message"
+            name="message"
+            placeholder="Залишіть своє повідомлення"
+          ></textarea>
+          <input class="take-order__message-input" name="edd-file" type="file" />
+          <p class="take-order__message-text">
+            *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+          </p>
+        </label>
+        <button class="main-button take-order__btn" type="submit">Відправити</button>
+      </form>
+    </div>
 
-    <p>Email</p>
-    <ul class="take-order__contacts-list">
-      <li class="take-order__contacts-item">
-        <a class="take-order__contacts-link" href="mailto:3dfreedom.info@gmail.com"
-          >3dfreedom.info@gmail.com</a
-        >
-      </li>
-    </ul>
+    <div class="take-order__contact-data">
+      <div class="take-order__contact-wrapper">
+        <p class="take-order__contact-data-text">ТЕЛЕФОНИ</p>
+        <ul class="take-order__contact-data-list list">
+          <li class="take-order__contact-data-item">
+            <a class="take-order__contact-data-link link" href="tel:+380957384551"
+              >+38 (095) -73-84-551</a
+            >
+          </li>
+          <li class="take-order__contact-data-item">
+            <a class="take-order__contact-data-link link" href="tel:+380980025235"
+              >+38 (098) -00-25-235</a
+            >
+          </li>
+        </ul>
+      </div>
 
-    <p>Робочий час</p>
-    <ul class="take-order__contacts-list">
-      <li class="take-order__contacts-item">Пн-пт: з 8:00 до 19:00</li>
-      <li class="take-order__contacts-item">Сб, Нд: з 10:00 до 17:00</li>
-    </ul>
+      <div class="take-order__contact-wrapper">
+        <p class="take-order__contact-data-text">Email</p>
+        <ul class="take-order__contact-data-list list">
+          <li class="take-order__contact-data-item">
+            <a class="take-order__contact-data-link link" href="mailto:3dfreedom.info@gmail.com"
+              >3dfreedom.info@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="take-order__contact-wrapper">
+        <p class="take-order__contact-data-text">РОБОЧИЙ ЧАС</p>
+        <ul class="take-order__contact-data-list list">
+          <li class="take-order__contact-data-item">
+            <span class="take-order__day">Пн-Пт:</span>
+            <span class="take-order__time">З 8:00 До 19:00</span>
+          </li>
+          <li class="take-order__contact-data-item">
+            <span class="take-order__day"> Сб, Нд:</span>
+            <span class="take-order__time">З 10:00 До 17:00</span>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
