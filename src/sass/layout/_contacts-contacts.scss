@@ -22,10 +22,17 @@
 }
 .ks-contakt-page__form-input {
   width: 100%;
-  width: 280px;
+  max-width: 280px;
   height: 24px;
   border: none;
   margin-top: 8px;
+  background-color: transparent;
+  outline: none;
+}
+.ks-contakt-page__form-input:focus,
+.ks-contakt-page__form-input:hover {
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
 }
 .ks-contakt-page__form-field:nth-child(-n + 2)::after {
   content: '';
@@ -47,8 +54,8 @@
 }
 .ks-contakt-page__form-textaria {
   width: 100%;
-
   height: 199px;
+  margin-top: 4px;
   padding-top: 22px;
   padding-left: 20px;
   padding-right: 20px;
@@ -57,22 +64,30 @@
   border-radius: 50px 0px;
   resize: none;
   overflow: hidden;
+  background-color: transparent;
+  outline: none;
+}
+.ks-contakt-page__form-textaria:focus,
+.ks-contakt-page__form-textaria:hover {
+  border: 2px solid var(--accent-color);
+  border-radius: 50px 0px;
 }
 .ks-textaria-wrap {
   position: relative;
-  margin-top: 4px;
-  height: 199px;
+  height: 222px;
 }
 .ks-textaria__icon {
   position: absolute;
   padding: 0;
   bottom: 23px;
   right: 22px;
+  cursor: pointer;
 }
-.ks-contakt-page__edd-file {
+
+.ks-contakt-page__add-file {
+  font-weight: normal;
   margin-top: 4px;
   margin-bottom: 24px;
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
   color: var(--form-placeholder-color);
@@ -100,6 +115,9 @@
 .ks-contakt-page__contacts-list:not(:last-child) {
   margin-bottom: 24px;
 }
+.contact-breakword {
+  display: block;
+}
 @media screen and (min-width: 768px) {
   .ks-contakt-page__form {
     max-width: 420px;
@@ -111,23 +129,34 @@
   }
   .ks-contakt-page__form-input {
     height: 20px;
-    width: 100%;
+    max-width: 420px;
   }
-  .ks-contakt-page__edd-file {
+  .ks-textaria__icon {
+    bottom: 18px;
+    right: 20px;
+  }
+  .ks-contakt-page__add-file {
     margin-bottom: 44px;
   }
   .main-button {
     align-self: flex-end;
   }
   .ks-contakt-page__elements {
-    width: 685px;
+    max-width: 685px;
   }
   .ks-contakt-page__contacts {
     display: flex;
     justify-content: space-between;
     margin-top: 76px;
+    max-width: 648px;
   }
-  .ks-contakt-page__contacts-item {
+  .main-button {
+    max-width: 177px;
+  }
+  .ks-contact-wraper:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .contact-breakword {
     text-align: end;
   }
 }
@@ -135,6 +164,7 @@
   .ks-contakt-page__elements {
     display: flex;
     justify-content: space-between;
+    max-width: 1102px;
   }
   .ks-contakt-page__section {
     margin-top: 100px;
@@ -149,9 +179,7 @@
     order: 2;
     width: 515px;
   }
-  .ks-contakt-page__title-form {
-    text-align: start;
-  }
+
   .ks-contakt-page__form {
     max-width: 515px;
   }
@@ -159,8 +187,8 @@
     font-size: 18px;
     line-height: 1.11;
   }
-  .ks-contakt-page__contacts-item {
-    text-align: start;
+  .ks-contakt-page__form-input {
+    max-width: 515px;
   }
   .ks-contakt-page__contacts-item {
     font-size: 18px;
@@ -183,9 +211,13 @@
     font-size: 18px;
     line-height: 1.11;
   }
-  .ks-contakt-page__edd-file {
+  .ks-contakt-page__add-file {
     font-size: 18px;
     line-height: 1.11;
     margin-bottom: 24px;
+  }
+  .contact-breakword {
+    display: inline;
+    text-align: start;
   }
 }
