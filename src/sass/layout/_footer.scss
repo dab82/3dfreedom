@@ -117,3 +117,33 @@
     margin-top: 16px;
   }
 }
+
+@media screen and (min-width: 1444px) {
+  .footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px 0;
+  }
+
+  .footer-logo {
+    margin-right: 136px;
+    margin-left: 0;
+  }
+
+  .contact-information {
+    margin-top: 0;
+  }
+
+  .footer-nav {
+    margin-right: 87px;
+  }
+
+  .footer-social {
+    margin-right: 145px;
+  }
+
+  .address {
+    text-align: start;
+  }
+}
