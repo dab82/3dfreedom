@@ -58,6 +58,10 @@
 //TABLET
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+  .processes__description-part:first-child {
+    margin-top: 0;
+  }
+
   .processes__description-part {
     width: 381px;
   }
