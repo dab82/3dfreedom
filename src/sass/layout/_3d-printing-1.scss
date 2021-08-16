@@ -20,14 +20,12 @@
   width: 132px;
   height: 158px;
   flex-basis: calc((100% - 30px) / 2);
-
   box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
   background: #ffffff;
 }
 
 .eb_we-create__item-name {
-  // font-family: Cera Pro;
   font-style: normal;
   @include font(14, 400, 18);
   font-size: 14px;
@@ -41,7 +39,7 @@
 
 // TABLET
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1443px) {
   .eb_we-create-title {
     font-style: normal;
     font-weight: bold;
@@ -53,5 +51,9 @@
 
   .eb_we-create.list {
     flex-wrap: nowrap;
+  }
+
+  .eb_we-create__item {
+    height: 182px;
   }
 }
