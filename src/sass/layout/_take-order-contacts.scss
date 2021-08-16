@@ -139,6 +139,10 @@
     display: flex;
     justify-content: space-between;
   }
+  .take-order__contact-data-text {
+    text-align: start;
+    @include font(24px, 700, 30px);
+  }
   .take-order__day {
     margin-left: auto;
   }
@@ -156,6 +160,7 @@
 
   .take-order__contacts-title {
     @include font(36px, 700, 45px);
+    text-align: start;
   }
 
   .take-order__form-input {
@@ -169,6 +174,8 @@
   }
 
   .take-order__contact-wrapper {
+    text-align: end;
+
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -176,6 +183,7 @@
 
   .take-order__contact-data-text {
     margin-bottom: 18px;
+    text-align: end;
   }
 
   .take-order__contact-data-text {
