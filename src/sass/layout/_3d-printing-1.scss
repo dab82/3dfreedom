@@ -44,7 +44,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
-    line-height: 45px;
+    line-height: 1.25;
 
     margin-bottom: 24px;
   }
@@ -55,5 +55,44 @@
 
   .eb_we-create__item {
     height: 182px;
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1444px) {
+  .eb_we-create-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.25;
+
+    margin-bottom: 24px;
+  }
+
+  .eb_we-create.list {
+    flex-wrap: nowrap;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+
+  .eb_we-create__item {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 250px;
+    height: 298px;
+    flex-basis: calc((100% - 60px) / 3);
+    justify-content: center;
+  }
+
+  .eb_we-create__item-name {
+    margin-top: 10px;
+    max-width: 180px;
+  }
+
+  .eb_we-create-picture {
+    display: flex;
+    align-items: center;
+    height: 162px;
   }
 }
