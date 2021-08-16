@@ -13,6 +13,7 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--accent-color);
+  transition: color 250ms linear, background-color 250ms linear;
 }
 .main-button:hover,
 .main-button:focus {
