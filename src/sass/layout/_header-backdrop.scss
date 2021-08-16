@@ -16,10 +16,17 @@
 
 .as-close-button__icon {
   margin-right: 55px;
+  padding: 5px 0 5px;
 }
 
 .mobile-menu__header {
   padding: 29px 0 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__header {
+    padding: 20px 0 35px;
+  }
 }
 
 .mobile-menu {
@@ -35,7 +42,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 500ms var(--cubic-bezier), visibility 500ms var(--cubic-bezier);
+  transition: opacity 250ms linear, visibility 250ms linear;
   &.is-open {
     opacity: 1;
     visibility: visible;
@@ -89,7 +96,7 @@
   width: 7px;
   height: 7px;
   margin-right: 10px;
-  background: #487996;
+  background: var(--accent-color);
   border-radius: 3px 0px;
 }
 .as-backdrop__item-servises {
