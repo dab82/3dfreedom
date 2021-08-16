@@ -33,9 +33,12 @@
 }
 
 .YV-scanning-scan-process__item-title {
+  display: block;
   @include font(14px, 400, 18px);
   text-align: center;
   color: var(--accent-color);
+  min-width: 50px;
+  word-wrap: break-word;
 }
 .YV-scanning-scan-process__item {
   position: relative;
@@ -151,5 +154,15 @@
 @media screen and (min-width: 1444px) {
   .YV-scanning-order-form-butto {
     margin-bottom: 100px;
+  }
+}
+.YV-scanning-scan-process__item-titile-carryover-first,
+.YV-scanning-scan-process__item-titile-carryover-second {
+  display: block;
+}
+
+@media screen and (min-width: 1444px) {
+  .YV-scanning-scan-process__item-titile-carryover-first {
+    display: inline;
   }
 }
