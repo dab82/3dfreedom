@@ -4,16 +4,29 @@
 .take-order__hero-title {
   margin-bottom: 16px;
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    font-size: 22px;
+  }
 }
 .take-order__background {
   background-image: url('../images/mobile/take-over/img0.jpg');
+  border-radius: 15px;
   width: 100%;
   height: 171px;
   background-repeat: no-repeat;
-  // background-size: cover;
   background-position: center;
   margin-bottom: 16px;
 }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  (min-resolution: 192dpi) and (min-width: 320px),
+  (min-resolution: 2dppx) and (min-width: 320px) {
+  .take-order__background {
+    background-image: url('../images/mobile/take-over/img0@2x.jpg');
+    background-size: cover;
+  }
+}
+
 .take-order__hero-text {
   @include font(16px, 300, 20px);
 
@@ -34,12 +47,21 @@
   }
   .take-order__background {
     background-image: url('../images/tablet/take-order/img0.jpg');
+    border-radius: 15px;
     width: 100%;
     height: 116px;
     background-repeat: no-repeat;
-    // background-size: cover;
     background-position: center;
     margin-right: 20px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .take-order__background {
+    background-image: url('../images/tablet/take-order/img0@2x.jpg');
+    background-size: cover;
   }
 }
 
@@ -53,10 +75,12 @@
   }
   .take-order__background {
     background-image: url('../images/desktop/take-order/img0.jpg');
+    border-radius: 15px;
     width: 100%;
     height: 315px;
     margin-right: 32px;
   }
+
   .take-order__hero-text-wrapper {
     background-image: url('../images/desktop/take-order/img1.jpg'),
       url('../images/desktop/take-order/img2.jpg'), url('../images/desktop/take-order/img3.jpg');
@@ -73,5 +97,13 @@
     &:not(:last-child) {
       margin-bottom: 24px;
     }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
+  (min-resolution: 192dpi) and (min-width: 1444px),
+  (min-resolution: 2dppx) and (min-width: 1444px) {
+  .take-order__background {
+    background-image: url('../images/desktop/take-order/img0@2x.jpg');
   }
 }
