@@ -1,16 +1,68 @@
 .lo-methods-creations {
   padding-top: 0px;
-  padding-bottom: 52px;
+  padding-bottom: 248px;
+
+  background-image: url(../images/mobile/3d-modeling/img0.png);
+  background-size: 280px 164px;
+  background-repeat: no-repeat;
+  background-position: 50% 87%;
+
+  @media screen and (min-width: 320px),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/3d-modeling/img0@2x.png);
+  }
+
+  @include min-width('medium') {
+    background-image: url(../images/tablet/3d-modeling/img0.png);
+    background-size: 246px 144px;
+    background-position: 88% 29%;
+
+    padding-bottom: 52px;
+  }
+
+  @media screen and (min-width: 768px),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/tablet/3d-modeling/img0@2x.png);
+  }
+
+  @include min-width('large') {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-image: url(../images/desktop/3d-modeling/img0.png);
+    background-size: 515px 301px;
+    background-repeat: no-repeat;
+    background-position: 79% 29%;
+  }
+
+  @media screen and (min-width: 1444px),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/desktop/3d-modeling/img0@2x.png);
+  }
 }
 
 .lo-methods-creations__title {
   margin-bottom: 16px;
   padding-right: 31px;
   color: var(--accent-color);
+
+  @include min-width('medium') {
+    padding-right: 0;
+  }
 }
 
 .lo-methods-creations__list {
-  margin-bottom: 32px;
+  position: relative;
+
+  @include min-width('medium') {
+    margin-bottom: 0;
+  }
 }
 
 .lo-methods-creations__item {
@@ -19,13 +71,17 @@
   @include font(16px, 300, 20px);
 
   color: var(--text-color);
+
+  @include min-width('large') {
+    @include font(18px, 300, 23px);
+  }
 }
 
 .lo-methods-creations__item::before {
   content: '';
   display: block;
   position: absolute;
-  top: 5px;
+  top: 7px;
   left: 0px;
   width: 7px;
   height: 7px;
@@ -35,16 +91,4 @@
 
 .lo-methods-creations__item:not(:last-child) {
   margin-bottom: 16px;
-}
-
-.lo-methods-creations-thumb {
-  width: 280px;
-  height: 164px;
-  background-image: url(../images/mobile/3d-modeling/img0.png);
-
-  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    & {
-      background-image: url(../images/mobile/3d-modeling/img0@2x.png);
-    }
-  }
 }
