@@ -1,3 +1,19 @@
+.mobile-menu {
+  @include min-width('small') {
+    background-image: url(../images/mobile/img1.png);
+    @include retina('../images//mobile/img1@2x.png', 'small');
+    background-size: map-get($min-widths, 'small');
+  }
+  @include min-width('medium') {
+    background-image: url(../images/tablet/img1.png);
+    @include retina('../images//tablet/img1@2x.png', 'medium');
+    background-size: map-get($min-widths, 'medium');
+  }
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: top;
+}
+
 .as-close-button__icon {
   margin-right: 55px;
 }
@@ -80,64 +96,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-  .as-backdrop__nav {
-    position: relative;
-  }
-  .as-backdrop__list {
-    position: relative;
-  }
-
-  .as-backdrop__nav::before {
-    content: '';
-    display: block;
-    width: 74px;
-    height: 74px;
-    position: absolute;
-    top: -32px;
-    left: 28px;
-    background-image: url(../images/tablet/main/background/img1.jpg);
-    border-radius: 72px;
-    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
-  }
-  .as-backdrop__nav::after {
-    content: '';
-    display: block;
-    width: 74px;
-    height: 74px;
-    position: absolute;
-    top: -22px;
-    left: 606px;
-    background-image: url(../images/tablet/main/background/img2.jpg);
-    border-radius: 0px 0px 70px 0px;
-    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
-  }
-
-  .as-backdrop__list::before {
-    content: '';
-    display: block;
-    width: 74px;
-    height: 74px;
-    position: absolute;
-    top: 252px;
-    left: -17px;
-    background-image: url(../images/tablet/main/background/img3.jpg);
-    border-radius: 72px;
-    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
-  }
-
-  .as-backdrop__list::after {
-    content: '';
-    display: block;
-    width: 74px;
-    height: 74px;
-    position: absolute;
-    top: 195px;
-    left: 607px;
-    background-image: url(../images/tablet/main/background/img4.jpg);
-    border-radius: 45px 45px 0px 0px;
-    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
-  }
 }
