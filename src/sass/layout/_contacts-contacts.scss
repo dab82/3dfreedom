@@ -103,7 +103,8 @@
     right: 22px;
     cursor: pointer;
     fill: #cdcdcd;
-    &:hover {
+    &:hover,
+    &:focus {
         fill: var(--accent-color);
     }
 }
