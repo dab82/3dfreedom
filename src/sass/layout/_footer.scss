@@ -3,11 +3,15 @@
   box-shadow: var(--footer-box-shadow);
 }
 
-.footer-logo {
+.footer-logo-link {
   display: block;
   width: 192px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.footer-logo {
+  width: 192px;
 }
 
 .contact-information {
@@ -126,7 +130,7 @@
     padding: 30px 0;
   }
 
-  .footer-logo {
+  .footer-logo-link {
     margin-right: 136px;
     margin-left: 0;
   }
