@@ -279,6 +279,7 @@
   transition: transform 250ms linear;
 }
 
-.pagination__item-servises:hover .pagination__icon {
+.pagination__item-servises:hover .pagination__icon,
+.pagination__item-servises:focus-within .pagination__icon {
   transform: rotateX(180deg);
 }
