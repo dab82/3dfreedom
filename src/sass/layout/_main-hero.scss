@@ -72,7 +72,7 @@
     cursor: pointer;
     z-index: 2;
 
-    @include min-width('small') {
+    @include max-width('medium') {
       display: none;
     }
     @include min-width('medium') {
