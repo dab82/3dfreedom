@@ -4,9 +4,6 @@
 .take-order__hero-title {
   margin-bottom: 16px;
   text-transform: uppercase;
-  @media screen and (max-width: 767px) {
-    font-size: 22px;
-  }
 }
 .take-order__background {
   background-image: url('../images/mobile/take-over/img0.jpg');
@@ -48,11 +45,12 @@
   .take-order__background {
     background-image: url('../images/tablet/take-order/img0.jpg');
     border-radius: 15px;
-    width: 100%;
+    max-width: 247px;
     height: 116px;
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -76,27 +74,45 @@
   .take-order__background {
     background-image: url('../images/desktop/take-order/img0.jpg');
     border-radius: 15px;
-    width: 100%;
+    max-width: 515px;
     height: 315px;
-    margin-right: 32px;
+    margin-right: 31px;
   }
 
   .take-order__hero-text-wrapper {
-    // background-image: url('../images/desktop/take-order/img1.jpg'),
-    //   url('../images/desktop/take-order/img2.jpg'), url('../images/desktop/take-order/img3.jpg');
-    background-position: -54px 125px;
-
-    background-image: url('../images/desktop/take-order/pictures.png');
-    background-repeat: no-repeat;
-    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
-
-    background-size: 130%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .take-order__hero-text {
     @include font(18px, 300, 23px);
 
     &:not(:last-child) {
       margin-bottom: 24px;
+    }
+  }
+  .take-order__hero-pictures {
+    width: 100%;
+    height: 144px;
+    display: flex;
+    justify-content: space-between;
+    &__box {
+      background-size: 100%;
+      width: calc((100% - 84px) / 3);
+      height: auto;
+      filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+    }
+    &__box:nth-child(1) {
+      background-image: url('../images/desktop/take-order/img1.jpg');
+      border-radius: 0px 72px 72px 0px;
+    }
+    &__box:nth-child(2) {
+      background-image: url('../images/desktop/take-order/img2.jpg');
+      border-radius: 72px 0px;
+    }
+    &__box:nth-child(3) {
+      background-image: url('../images/desktop/take-order/img3.jpg');
+      border-radius: 0px 0px 72px 0px;
     }
   }
 }
@@ -112,7 +128,18 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
   (min-resolution: 192dpi) and (min-width: 1444px),
   (min-resolution: 2dppx) and (min-width: 1444px) {
-  .take-order__hero-text-wrapper {
-    background-image: url('../images/desktop/take-order/pictures@2x.png');
+  .take-order__hero-pictures {
+    &__box:nth-child(1) {
+      background-image: url('../images/desktop/take-order/img1@2x.jpg');
+      border-radius: 0px 72px 72px 0px;
+    }
+    &__box:nth-child(2) {
+      background-image: url('../images/desktop/take-order/img2@2x.jpg');
+      border-radius: 72px 0px;
+    }
+    &__box:nth-child(3) {
+      background-image: url('../images/desktop/take-order/img3@2x.jpg');
+      border-radius: 0px 0px 72px 0px;
+    }
   }
 }
