@@ -21,6 +21,7 @@
   margin-bottom: 44px;
 }
 .ks-contakt-page__form-input {
+  display: none;
   width: 100%;
   max-width: 280px;
   height: 24px;
@@ -28,6 +29,10 @@
   margin-top: 8px;
   background-color: transparent;
   outline: none;
+}
+.ks-contakt-page__form-field:hover > .ks-contakt-page__form-input,
+.ks-contakt-page__form-field:focus > .ks-contakt-page__form-input {
+  display: block;
 }
 .ks-contakt-page__form-input:focus,
 .ks-contakt-page__form-input:hover {
@@ -83,7 +88,6 @@
   right: 22px;
   cursor: pointer;
 }
-
 .ks-contakt-page__add-file {
   font-weight: normal;
   margin-top: 4px;
@@ -138,6 +142,7 @@
   .ks-contakt-page__add-file {
     margin-bottom: 44px;
   }
+
   .main-button {
     align-self: flex-end;
   }
