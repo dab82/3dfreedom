@@ -20,6 +20,7 @@
   &__photos {
     position: relative;
     @include flex-center($jc: start);
+    flex-wrap: nowrap;
     margin-bottom: 32px;
     @include min-width('medium') {
       justify-content: center;
