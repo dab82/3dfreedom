@@ -68,11 +68,18 @@
   height: 222px;
 }
 .textaria__icon {
+  fill: var(--form-placeholder-color);
   position: absolute;
   padding: 0;
   bottom: 23px;
   right: 22px;
   cursor: pointer;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 .take-order__message {
   width: 100%;
@@ -249,10 +256,6 @@
     @include font(18px, 400, 20px);
   }
 
-  // работа с позиционированием!!!!!!!!!!Костыль
-  .take-order__contacts {
-  }
-
   .take-order__container {
     position: relative;
   }
@@ -267,13 +270,3 @@
     right: -36px;
   }
 }
-
-//Становится огромным
-
-// @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
-//   (min-resolution: 192dpi) and (min-width: 1444px),
-//   (min-resolution: 2dppx) and (min-width: 1444px) {
-//   .take-order__contact-bacgraund {
-//     background-image: url('../images/desktop/take-order/pic@2x.png');
-//   }
-// }
