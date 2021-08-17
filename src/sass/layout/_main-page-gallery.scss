@@ -13,15 +13,14 @@
     display: block;
 }
 
-.gallery__card-title {
-    margin-top: 8px;
-    @include font(16px, 300, 20px);
-    color: var(--accent-color);
+.gallery__list-card:not(:last-child) {
     margin-bottom: 24px;
 }
 
-.gallery__card-title_margin-bot {
-    margin-bottom: 0;
+.gallery__card-title {
+    padding-top: 8px;
+    @include font(16px, 300, 20px);
+    color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -38,10 +37,12 @@
         flex-basis: calc((100% - 2 * 20px) / 2);
         margin-left: 20px;
         margin-top: 32px;
+        &:not(:last-child) {
+            margin-bottom: 0px;
+        }
     }
     .gallery__card-title {
-        margin-top: 16px;
-        margin-bottom: 0px;
+        padding-top: 16px;
     }
 }
 
