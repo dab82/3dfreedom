@@ -1,18 +1,18 @@
 .main-bg {
   @include min-width('small') {
-    background-image: url(../images/mobile/img1.png);
-    @include retina('../images//mobile/img1@2x.png', 'small');
-    background-size: map-get($min-widths, 'small');
+    background-image: url(../images/mobile/img1.jpg);
+    @include retina('../images//mobile/img1@2x.jpg', 'small');
+    background-size: 538px;
   }
   @include min-width('medium') {
-    background-image: url(../images/tablet/img1.png);
-    @include retina('../images//tablet/img1@2x.png', 'medium');
-    background-size: map-get($min-widths, 'medium');
+    background-image: url(../images/tablet/img1.jpg);
+    @include retina('../images//tablet/img1@2x.jpg', 'medium');
+    background-size: 962px;
   }
   @include min-width('large') {
-    background-image: url(../images/desktop/img1.png);
-    @include retina('../images//desktop/img1@2x.png', 'large');
-    background-size: map-get($min-widths, 'large');
+    background-image: url(../images/desktop/img1.jpg);
+    @include retina('../images//desktop/img1@2x.jpg', 'large');
+    background-size: 1728px;
   }
   background-repeat: no-repeat;
   background-origin: border-box;
@@ -20,19 +20,19 @@
 }
 .side-bg {
   @include min-width('small') {
-    background-image: url(../images/mobile/img2.png);
-    @include retina('../images//mobile/img2@2x.png', 'small');
-    background-size: map-get($min-widths, 'small');
+    background-image: url(../images/mobile/img1.jpg);
+    @include retina('../images//mobile/img1@2x.jpg', 'small');
+    background-size: 538px;
   }
   @include min-width('medium') {
-    background-image: url(../images/tablet/img2.png);
-    @include retina('../images//tablet/img2@2x.png', 'medium');
-    background-size: map-get($min-widths, 'medium');
+    background-image: url(../images/tablet/img2.jpg);
+    @include retina('../images//tablet/img2@2x.jpg', 'medium');
+    background-size: 962px;
   }
   @include min-width('large') {
-    background-image: url(../images/desktop/img2.png);
-    @include retina('../images//desktop/img2@2x.png', 'large');
-    background-size: map-get($min-widths, 'large');
+    background-image: url(../images/desktop/img2.jpg);
+    @include retina('../images//desktop/img2@2x.jpg', 'large');
+    background-size: 1728px;
   }
   background-repeat: no-repeat;
   background-origin: border-box;

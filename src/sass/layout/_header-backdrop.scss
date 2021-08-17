@@ -1,13 +1,13 @@
 .mobile-menu {
   @include min-width('small') {
-    background-image: url(../images/mobile/img1.png);
-    @include retina('../images//mobile/img1@2x.png', 'small');
-    background-size: map-get($min-widths, 'small');
+    background-image: url(../images/mobile/img1.jpg);
+    @include retina('../images//mobile/img1@2x.jpg', 'small');
+    background-size: 538px;
   }
   @include min-width('medium') {
-    background-image: url(../images/tablet/img1.png);
-    @include retina('../images//tablet/img1@2x.png', 'medium');
-    background-size: map-get($min-widths, 'medium');
+    background-image: url(../images/tablet/img1.jpg);
+    @include retina('../images//tablet/img1@2x.jpg', 'medium');
+    background-size: 962px;
   }
   background-repeat: no-repeat;
   background-origin: border-box;
