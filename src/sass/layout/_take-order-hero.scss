@@ -82,14 +82,15 @@
   }
 
   .take-order__hero-text-wrapper {
-    background-image: url('../images/desktop/take-order/img1.jpg'),
-      url('../images/desktop/take-order/img2.jpg'), url('../images/desktop/take-order/img3.jpg');
+    // background-image: url('../images/desktop/take-order/img1.jpg'),
+    //   url('../images/desktop/take-order/img2.jpg'), url('../images/desktop/take-order/img3.jpg');
+    background-position: -54px 125px;
 
-    // background-image: url('../images/desktop/take-order/pictures.jpg');
+    background-image: url('../images/desktop/take-order/pictures.png');
     background-repeat: no-repeat;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
 
-    background-position: left bottom, bottom, right bottom;
-    background-size: 144px;
+    background-size: 130%;
   }
   .take-order__hero-text {
     @include font(18px, 300, 23px);
@@ -105,5 +106,13 @@
   (min-resolution: 2dppx) and (min-width: 1444px) {
   .take-order__background {
     background-image: url('../images/desktop/take-order/img0@2x.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
+  (min-resolution: 192dpi) and (min-width: 1444px),
+  (min-resolution: 2dppx) and (min-width: 1444px) {
+  .take-order__hero-text-wrapper {
+    background-image: url('../images/desktop/take-order/pictures@2x.png');
   }
 }
