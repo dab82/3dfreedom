@@ -6,23 +6,25 @@
                 <form class="ks-contakt-page__form" name="contact-form" action="#">
                     <label class="ks-contakt-page__form-field">
                         Ім’я
-                        <input type="text" name="user-name" required minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+"
+                        <input type="text" name="user-name" placeholder="Олексій" required minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+"
                             title="Имя должно содержать символы кирилицы или латиницы" class="ks-contakt-page__form-input" />
                     </label>
                     <label class="ks-contakt-page__form-field">
                         <input type="email" name="user-mail" placeholder="Email" required class="ks-contakt-page__form-input" />
                     </label>
-                    <label class="ks-contakt-page__form-field">
+                    <div class="ks-textaria-wrap">
+                      <label class="ks-contakt-page__form-field-textaria">
                         Повідомлення
-                    <div class="ks-textaria-wrap" >
                         <textarea class="ks-contakt-page__form-textaria" name="message" placeholder="Залишіть своє повідомлення"></textarea>
+                      </label>
+                      <input class="visually-hidden ks-contact-page__add-file" name="add-file" type="file" id="file-upload" />
+                      <label for="file-upload" class="ks-contact-page__add-file-label">
                         <svg class="ks-textaria__icon" width="22" height="20">
-                        <use href="./images/sprite.svg#icon-clip"></use>
+                            <use href="./images/sprite.svg#icon-clip"></use>
                         </svg>
+                      </label>
                     </div>
-                    </label>
-                    <input class="visually-hidden" name="edd-file" type="file" />
-                    <label class="ks-contakt-page__edd-file" >*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</label>
+                    <p class="ks-contakt-page__add-file" >*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
                     <button type="submit" class="main-button">Відправити</button>
                 </form>
             </div>
@@ -50,8 +52,8 @@
                 <div class="ks-contact-wraper" >
                     <h3 class="ks-contakt-page__title-contacts">Робочий час</h3>
                     <ul class="ks-contakt-page__contacts-list">
-                        <li class="ks-contakt-page__contacts-item">Пн-пт: <br> з 8:00 до 19:00</li>
-                        <li class="ks-contakt-page__contacts-item">Сб, Нд: <br> з 10:00 до 17:00</li>
+                        <li class="ks-contakt-page__contacts-item "><span class="contact-breakword">Пн-пт: </span><span class="contact-breakword" >з 8:00 до 19:00</span> </li>
+                        <li class="ks-contakt-page__contacts-item "><span class="contact-breakword">Сб, Нд: </span><span class="contact-breakword">з 10:00 до 17:00</span> </li>
                     </ul>
                 </div>
             </div>
