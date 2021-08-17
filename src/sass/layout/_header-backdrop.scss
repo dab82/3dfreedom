@@ -15,16 +15,12 @@
 }
 
 .close-button__icon {
-  margin-right: 55px;
-  padding: 5px 0 5px;
+  padding: 5px;
 }
 
 .mobile-menu__header {
   padding: 29px 0 32px;
-}
-
-@include min-width('medium') {
-  .mobile-menu__header {
+  @include min-width('medium') {
     padding: 20px 0 35px;
   }
 }
@@ -68,6 +64,7 @@
   color: transparent;
   -webkit-text-stroke: 1px var(--accent-color);
 }
+
 .backdrop__item:not(:last-child) {
   margin-bottom: 24px;
 }
