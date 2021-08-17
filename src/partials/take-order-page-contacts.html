@@ -58,32 +58,39 @@
           <option value="Red">Red</option>
         </select>
 
-        <label class="take-order__form-field">
-          Повідомлення
-          <div class="textaria-wrap">
+        <div class="textaria-wrap">
+          <label class="take-order__form-field">
+            Повідомлення
             <textarea
               class="take-order__message"
               name="message"
               placeholder="Залишіть своє повідомлення"
             ></textarea>
+          </label>
+
+          <input
+            class="take-order__message-input visually-hidden"
+            name="edd-file"
+            type="file"
+            id="file-upload"
+          />
+          <label class="take-order__message-text" for="file-upload">
             <svg class="textaria__icon" width="22" height="20">
               <use href="./images/sprite.svg#icon-clip"></use>
             </svg>
-          </div>
-        </label>
+          </label>
+        </div>
 
-        <input class="take-order__message-input visually-hidden" name="edd-file" type="file" />
-        <label class="take-order__message-text">
+        <p class="take-order__message-text">
           *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
-        </label>
-
+        </p>
         <button class="main-button take-order__btn" type="submit">Відправити</button>
       </form>
     </div>
 
     <div class="take-order__contact-data">
       <div class="take-order__contact-wrapper">
-        <p class="take-order__contact-data-text">ТЕЛЕФОНИ</p>
+        <h3 class="take-order__contact-data-text">ТЕЛЕФОНИ</h3>
         <ul class="take-order__contact-data-list list">
           <li class="take-order__contact-data-item">
             <a class="take-order__contact-data-link link" href="tel:+380957384551"
@@ -99,7 +106,7 @@
       </div>
 
       <div class="take-order__contact-wrapper">
-        <p class="take-order__contact-data-text">Email</p>
+        <h3 class="take-order__contact-data-text">Email</h3>
         <ul class="take-order__contact-data-list list">
           <li class="take-order__contact-data-item">
             <a class="take-order__contact-data-link link" href="mailto:3dfreedom.info@gmail.com"
@@ -110,7 +117,7 @@
       </div>
 
       <div class="take-order__contact-wrapper">
-        <p class="take-order__contact-data-text">РОБОЧИЙ ЧАС</p>
+        <h3 class="take-order__contact-data-text">РОБОЧИЙ ЧАС</h3>
         <ul class="take-order__contact-data-list list">
           <li class="take-order__contact-data-item">
             <span class="take-order__day">Пн-Пт:</span>
@@ -122,6 +129,8 @@
           </li>
         </ul>
       </div>
+
+      <div class="take-order__contact-bacgraund"></div>
     </div>
   </div>
 </section>

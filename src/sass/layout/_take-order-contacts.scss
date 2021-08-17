@@ -64,8 +64,7 @@
 }
 .textaria-wrap {
   position: relative;
-  margin-top: 4px;
-  height: 199px;
+  height: 222px;
 }
 .textaria__icon {
   position: absolute;
@@ -104,11 +103,12 @@
   @include font(16px, 400, 20px);
   color: var(--form-placeholder-color);
   margin-top: 4px;
+  margin-bottom: 24px;
 }
 
 .take-order__btn {
   max-width: 100%;
-  margin-top: 24px;
+
   margin-bottom: 52px;
 }
 
@@ -171,10 +171,13 @@
     margin: 0 auto;
     width: 420px;
   }
+  .take-order__message-text {
+    margin-bottom: 44px;
+  }
   .take-order__btn {
     max-width: 177px;
     margin-left: auto;
-    margin-top: 44px;
+
     margin-bottom: 76px;
   }
   .take-order__contact-data {
@@ -205,10 +208,19 @@
     text-align: start;
   }
 
+  .take-order__form {
+    width: 515px;
+  }
   .take-order__form-input {
     &::placeholder {
       @include font(18px, 400, 20px);
     }
+  }
+  .take-order__message-text {
+    margin-bottom: 24px;
+  }
+  .take-order__btn {
+    margin-bottom: 100px;
   }
 
   .take-order__contact-data {
@@ -244,12 +256,22 @@
     display: block;
     @include font(18px, 400, 20px);
   }
-  // .take-order__contact-background {
-  //   background-image: url('../images/desktop/take-order/pic.jpg');
-  //   // max-width: 437px;
-  //   height: 290px;
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  //   background-size: 437px;
-  // }
+
+  // работа с позиционированием!!!!!!!!!!Костыль
+  .take-order__contacts {
+  }
+
+  .take-order__container {
+    position: relative;
+  }
+  .take-order__contact-bacgraund {
+    position: absolute;
+    background-image: url('../images/desktop/take-order/pic.png');
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+    width: 560px;
+    height: 424px;
+    background-repeat: no-repeat;
+    bottom: 36px;
+    right: -36px;
+  }
 }

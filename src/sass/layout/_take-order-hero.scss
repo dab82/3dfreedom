@@ -82,14 +82,14 @@
   }
 
   .take-order__hero-text-wrapper {
-    background-image: url('../images/desktop/take-order/img1.jpg'),
-      url('../images/desktop/take-order/img2.jpg'), url('../images/desktop/take-order/img3.jpg');
+    // background-image: url('../images/desktop/take-order/img1.jpg'),
+    //   url('../images/desktop/take-order/img2.jpg'), url('../images/desktop/take-order/img3.jpg');
+    background-position: bottom;
 
-    // background-image: url('../images/desktop/take-order/pictures.jpg');
+    background-image: url('../images/desktop/take-order/pictures.png');
     background-repeat: no-repeat;
 
-    background-position: left bottom, bottom, right bottom;
-    background-size: 144px;
+    background-size: 100%;
   }
   .take-order__hero-text {
     @include font(18px, 300, 23px);
