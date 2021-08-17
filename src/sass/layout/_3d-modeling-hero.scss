@@ -1,0 +1,25 @@
+.as-3d-mode-hero {
+  &__title {
+    @include min-width('small') {
+      margin-bottom: 16px;
+    }
+    // @include min-width('medium') {
+    //   margin-bottom: 16px;
+    // }
+    // @include min-width('large') {
+    //   margin-bottom: 16px;
+    // }
+  }
+
+  &__description {
+    @include min-width('small') {
+      margin-bottom: 16px;
+    }
+    // @include min-width('medium') {
+    //   margin-bottom: 16px;
+    // }
+    // @include min-width('large') {
+    //   margin-bottom: 16px;
+    // }
+  }
+}
