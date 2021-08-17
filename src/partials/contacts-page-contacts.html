@@ -1,60 +1,69 @@
-<section class="ks-contakt-page-contakts ks-contakt-page__section">  
+<section class="ks-contakt-page-contakts ks-contakt-page__section">
     <div class="container">
-        <div class="ks-contakt-page__elements" >
-            <div class="ks-contact-page__form-wrap" >
-                <h3 class="ks-contakt-page__title-form" >ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
+        <div class="ks-contakt-page__elements">
+            <div class="ks-contact-page__form-wrap">
+                <h3 class="ks-contakt-page__title-form">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
                 <form class="ks-contakt-page__form" name="contact-form" action="#">
-                    <label class="ks-contakt-page__form-field">
-                        Ім’я
-                        <input type="text" name="user-name" placeholder="Олексій" required minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+"
-                            title="Имя должно содержать символы кирилицы или латиницы" class="ks-contakt-page__form-input" />
-                    </label>
-                    <label class="ks-contakt-page__form-field" for="user-mail">
-                        Email
-                        <input type="email" id="user-mail" name="user-mail" placeholder="test@gmail.com" required class="ks-contakt-page__form-input" />
-                    </label>
-                    <div class="ks-textaria-wrap">
-                      <label class="ks-contakt-page__form-field-textaria">
-                        Повідомлення
-                        <textarea class="ks-contakt-page__form-textaria" name="message" placeholder="Залишіть своє повідомлення"></textarea>
-                      </label>
-                      <input class="visually-hidden ks-contact-page__add-file" name="add-file" type="file" id="file-upload" />
-                      <label for="file-upload" class="ks-contact-page__add-file-label">
-                        <svg class="ks-textaria__icon" width="22" height="20">
-                            <use href="./images/sprite.svg#icon-clip"></use>
-                        </svg>
-                      </label>
+                    <div class="contakt-page-field">
+
+                        <input id="username" type="text" name="username" placeholder="" required minlength="2"
+                            pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кирилицы или латиницы"
+                            class="ks-contakt-page__form-input" />
+                        <label for="username" class="ks-contakt-page__form-field">
+                            iм’я</label>
                     </div>
-                    <p class="ks-contakt-page__add-file" >*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
+                    <div class="contakt-page-field">
+                        <input type="email" id="user-mail" name="user-mail" placeholder="" required
+                            class="ks-contakt-page__form-input" />
+                        <label class="ks-contakt-page__form-field" for="user-mail">
+                            email</label>
+                    </div>
+                    <div class="ks-textaria-wrap">
+                        <label class="ks-contakt-page__form-field-textarea">
+                            Повідомлення
+                            <textarea class="ks-contakt-page__form-textaria" name="message"
+                                placeholder="Залишіть своє повідомлення"></textarea>
+                        </label>
+                        <input class="visually-hidden ks-contact-page__add-file" name="add-file" type="file"
+                            id="file-upload" />
+                        <label for="file-upload" class="ks-contact-page__add-file-label">
+                            <svg class="ks-textaria__icon" width="22" height="20">
+                                <use href="./images/sprite.svg#icon-clip"></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <p class="ks-contakt-page__add-file">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
                     <button type="submit" class="main-button contact-page__main-button">Відправити</button>
                 </form>
             </div>
             <div class="ks-contakt-page__contacts">
-                <div class="ks-contact-wraper" > 
-                    <h3 class="ks-contakt-page__title-contacts" >ТЕЛЕФОНИ</h3>
+                <div class="ks-contact-wraper">
+                    <h3 class="ks-contakt-page__title-contacts">ТЕЛЕФОНИ</h3>
                     <ul class="ks-contakt-page__contacts-list">
-                    <li class="ks-contakt-page__contacts-item">
-                        <a class="ks-contakt-page__contacts-link" href="tel:+380957384551">+38 (095) -73-84-551</a>
-                    </li>
-                    <li class="ks-contakt-page__contacts-item">
-                        <a class="ks-contakt-page__contacts-link" href="tel:+380980025235">+38 (098) -00-25-235</a>
-                    </li>
+                        <li class="ks-contakt-page__contacts-item">
+                            <a class="ks-contakt-page__contacts-link" href="tel:+380957384551">+38 (095) -73-84-551</a>
+                        </li>
+                        <li class="ks-contakt-page__contacts-item">
+                            <a class="ks-contakt-page__contacts-link" href="tel:+380980025235">+38 (098) -00-25-235</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="ks-contact-wraper" >
+                <div class="ks-contact-wraper">
                     <h3 class="ks-contakt-page__title-contacts">Email</h3>
                     <ul class="ks-contakt-page__contacts-list">
                         <li class="ks-contakt-page__contacts-item">
                             <a class="ks-contakt-page__contacts-link"
-                            href="mailto:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
+                                href="mailto:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
                         </li>
                     </ul>
                 </div>
-                <div class="ks-contact-wraper" >
+                <div class="ks-contact-wraper">
                     <h3 class="ks-contakt-page__title-contacts">Робочий час</h3>
                     <ul class="ks-contakt-page__contacts-list">
-                        <li class="ks-contakt-page__contacts-item "><span class="contact-breakword">Пн-пт: </span><span class="contact-breakword" >з 8:00 до 19:00</span> </li>
-                        <li class="ks-contakt-page__contacts-item "><span class="contact-breakword">Сб, Нд: </span><span class="contact-breakword">з 10:00 до 17:00</span> </li>
+                        <li class="ks-contakt-page__contacts-item "><span class="contact-breakword">Пн-пт: </span><span
+                                class="contact-breakword">з 8:00 до 19:00</span> </li>
+                        <li class="ks-contakt-page__contacts-item "><span class="contact-breakword">Сб, Нд: </span><span
+                                class="contact-breakword">з 10:00 до 17:00</span> </li>
                     </ul>
                 </div>
             </div>
