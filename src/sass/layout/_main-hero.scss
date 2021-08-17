@@ -1,5 +1,7 @@
 .as-main-hero {
-  position: relative;
+  &__container {
+    position: relative;
+  }
   &__title {
     margin-bottom: 33px;
     max-width: 280px;
@@ -9,6 +11,7 @@
       margin: 0 auto 64px;
     }
     @include min-width('large') {
+      // text-align: center;
       margin-bottom: 68px;
       max-width: 624px;
     }
@@ -41,6 +44,9 @@
     @include min-width('medium') {
       margin-right: 20px;
     }
+    @include min-width('large') {
+      margin-right: 35px;
+    }
   }
   &__item:nth-child(1) {
     border-radius: 0px 35px 0px 0px;
@@ -60,15 +66,36 @@
       line-height: 42px;
     }
   }
-  &__icon {
+  &__link {
+    @include flex-center();
     position: absolute;
-    left: 78px;
-    bottom: 50px;
+    cursor: pointer;
+    z-index: 2;
+
     @include min-width('small') {
       display: none;
     }
     @include min-width('medium') {
       display: block;
+      padding: 29px;
+      left: 67px;
+      bottom: 54px;
+    }
+    @include min-width('large') {
+      padding: 56px;
+      left: 5px;
+      bottom: -10px;
+    }
+  }
+  &__icon {
+    @include min-width('medium') {
+      padding: 0;
+      width: 16px;
+      height: 16px;
+    }
+    @include min-width('large') {
+      width: 32px;
+      height: 32px;
     }
   }
 }
