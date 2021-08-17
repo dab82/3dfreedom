@@ -12,6 +12,7 @@
 .take-order__form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 52px;
 }
 .take-order__form-field {
   &:nth-child(-n + 2) {
@@ -106,12 +107,6 @@
   margin-bottom: 24px;
 }
 
-.take-order__btn {
-  max-width: 100%;
-
-  margin-bottom: 52px;
-}
-
 .take-order__contact-wrapper:not(:last-child) {
   @media screen and (max-width: 767px) {
     margin-bottom: 24px;
@@ -168,17 +163,16 @@
   }
 
   .take-order__form {
-    margin: 0 auto;
+    margin: 0 auto 76px;
     width: 420px;
   }
   .take-order__message-text {
     margin-bottom: 44px;
   }
-  .take-order__btn {
-    max-width: 177px;
+  .main-button--take-order {
+    max-width: unset;
+    width: 177px;
     margin-left: auto;
-
-    margin-bottom: 76px;
   }
   .take-order__contact-data {
     display: flex;
@@ -210,6 +204,7 @@
 
   .take-order__form {
     width: 515px;
+    margin-bottom: 100px;
   }
   .take-order__form-input {
     &::placeholder {
@@ -218,9 +213,6 @@
   }
   .take-order__message-text {
     margin-bottom: 24px;
-  }
-  .take-order__btn {
-    margin-bottom: 100px;
   }
 
   .take-order__contact-data {
