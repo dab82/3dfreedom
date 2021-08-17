@@ -274,19 +274,14 @@
     bottom: 36px;
     right: -36px;
   }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
-    (min-resolution: 192dpi) and (min-width: 1444px),
-    (min-resolution: 2dppx) and (min-width: 1444px) {
-    .take-order__contact-bacgraund {
-      background-image: url('../images/desktop/take-order/pic@2x.png');
-    }
-  }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
-  (min-resolution: 192dpi) and (min-width: 1444px),
-  (min-resolution: 2dppx) and (min-width: 1444px) {
-  .take-order__contact-bacgraund {
-    background-image: url('../images/desktop/take-order/pic@2x.png');
-  }
-}
+//Становится огромным
+
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
+//   (min-resolution: 192dpi) and (min-width: 1444px),
+//   (min-resolution: 2dppx) and (min-width: 1444px) {
+//   .take-order__contact-bacgraund {
+//     background-image: url('../images/desktop/take-order/pic@2x.png');
+//   }
+// }
