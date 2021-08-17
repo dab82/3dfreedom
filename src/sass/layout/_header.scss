@@ -277,8 +277,8 @@
   top: 10px;
   left: 70px;
   transition: transform 250ms linear;
+}
 
-  .pagination__item-servises:hover & {
-    transform: rotateX(180deg);
-  }
+.pagination__item-servises:hover .pagination__icon {
+  transform: rotateX(180deg);
 }
