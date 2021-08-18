@@ -24,18 +24,13 @@
   cursor: pointer;
   border-bottom: 1px solid var(--accent-color);
 }
-// .contakt-page__form-input:focus,
-// .contakt-page__form-input:hover {
-//   outline: none;
-// }
+
 .contakt-page__form-placeholder {
   @include font(16px, 400, 20px);
   text-transform: capitalize;
   position: absolute;
   padding-left: 4px;
   left: 0;
-  // top: 50%;
-  // transform: translateY(-50%);
 }
 .contakt-page__form-input:focus + .contakt-page__form-placeholder,
 .contakt-page__form-input:hover + .contakt-page__form-placeholder {
