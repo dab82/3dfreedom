@@ -176,8 +176,9 @@
     margin-bottom: 44px;
   }
   .main-button--take-order {
-    max-width: unset;
-    width: 177px;
+    // max-width: unset;
+    // width: 177px;
+    min-width: 177px;
     margin-left: auto;
   }
   .take-order__contact-data {

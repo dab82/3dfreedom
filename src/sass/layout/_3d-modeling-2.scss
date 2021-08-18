@@ -92,5 +92,6 @@
 
   @include min-width('medium') {
     margin: 0 auto;
+    max-width: 277px;
   }
 }

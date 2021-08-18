@@ -143,12 +143,18 @@
 }
 
 .scanning-order-form-button {
-  margin-bottom: 76px;
+  margin-bottom: 92px;
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .scanning-order-form-button {
+    margin-bottom: 76px;
+  }
+}
+
 @media screen and (min-width: 1444px) {
-  .scanning-order-form-butto {
+  .scanning-order-form-button {
     margin-bottom: 100px;
   }
 }
