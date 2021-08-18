@@ -1,25 +1,35 @@
 .as-3d-mode-hero {
+  padding-bottom: 52px;
+  @include min-width('medium') {
+    padding-bottom: 50px;
+  }
+  @include min-width('large') {
+    padding-bottom: 0px;
+  }
   &__title {
     @include min-width('small') {
       margin-bottom: 16px;
     }
-    // @include min-width('medium') {
-    //   margin-bottom: 16px;
-    // }
-    // @include min-width('large') {
-    //   margin-bottom: 16px;
-    // }
-  }
-
-  &__description {
-    @include min-width('small') {
-      margin-bottom: 16px;
+    @include min-width('large') {
+      margin-bottom: 24px;
     }
-    // @include min-width('medium') {
-    //   margin-bottom: 16px;
-    // }
-    // @include min-width('large') {
-    //   margin-bottom: 16px;
-    // }
+  }
+  &__list {
+    @include min-width('large') {
+      @include flex-center($al: start);
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
+
+    @include min-width('large') {
+      margin-bottom: 0;
+      margin-right: 32px;
+    }
+  }
+  &__description {
+    @include min-width('medium') {
+      max-width: 512px;
+    }
   }
 }
