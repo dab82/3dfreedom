@@ -66,6 +66,10 @@
 // DESKTOP
 
 @media screen and (min-width: 1444px) {
+  .procesess-section.section {
+    padding-bottom: 100px;
+  }
+
   .processes__item {
     display: flex;
     margin-top: 100px;
