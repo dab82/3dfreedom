@@ -11,39 +11,38 @@
   display: flex;
   flex-direction: column;
 }
-
-.contakt-page-field {
-  position: relative;
-  height: 24px;
-  border-bottom: 1px solid var(--accent-color);
-  margin-top: 44px;
-  margin-left: 4px;
-}
 .contakt-page__form-field {
-  position: absolute;
-  @include font(16px, 400, 20px);
-  text-transform: capitalize;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  display: block;
+  margin-top: 44px;
 }
 .contakt-page__form-input {
+  background-color: transparent;
   width: 100%;
-  height: 100%;
+  padding: 4px;
   border: none;
-  padding: 0px;
   cursor: pointer;
+  border-bottom: 1px solid var(--accent-color);
 }
 .contakt-page__form-input:focus,
 .contakt-page__form-input:hover {
   outline: none;
 }
+.contakt-page__form-placeholder {
+  @include font(16px, 400, 20px);
+  text-transform: capitalize;
+  position: absolute;
+  padding-left: 4px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
-.contakt-page__form-input:hover + .contakt-page__form-field,
-.contakt-page__form-input:focus + .contakt-page__form-field,
-.contakt-page__form-input:not(:placeholder-shown) + .contakt-page__form-field {
+.contakt-page__form-input:hover + .contakt-page__form-placeholder,
+.contakt-page__form-input:focus + .contakt-page__form-placeholder,
+.contakt-page__form-input:not(:placeholder-shown) + .contakt-page__form-placeholder {
   transform: translateY(-150%);
   font-size: 14px;
-  // color: var(--form-placeholder-color);
 
   transition: transform 250ms linear 250ms;
 }
@@ -84,11 +83,9 @@
   margin-top: 44px;
 }
 .contakt-page__form-field-textarea {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-
+  @include font(16px, 400, 20px);
   color: var(--text-color);
+  padding-left: 4px;
 }
 
 .textaria__icon {

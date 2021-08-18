@@ -4,35 +4,33 @@
             <div class="contact-page__form-wrap">
                 <h3 class="contakt-page__title-form">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
                 <form class="contakt-page__form" name="contact-form" action="#">
-                    <div class="contakt-page-field">
-
-                        <input id="username" type="text" name="username" placeholder="" required minlength="2"
+                    <label class="contakt-page__form-field">
+                        <input type="text" name="use-rname" placeholder="" required minlength="2"
                             pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кирилицы или латиницы"
                             class="contakt-page__form-input" />
-                        <label for="username" class="contakt-page__form-field">
-                            iм’я</label>
-                    </div>
-                    <div class="contakt-page-field">
-                        <input type="email" id="user-mail" name="user-mail" placeholder="" required
+                        <span class="contakt-page__form-placeholder">iм’я</span>
+                    </label>
+                    <label class="contakt-page__form-field">
+                        <input type="email" name="user-mail" placeholder="" required minlength="2"
+                            pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кирилицы или латиницы"
                             class="contakt-page__form-input" />
-                        <label class="contakt-page__form-field" for="user-mail">
-                            email</label>
-                    </div>
+                        <span class="contakt-page__form-placeholder">email</span>
+                    </label>
                     <div class="textaria-wrap">
                         <label class="contakt-page__form-field-textarea">
                             Повідомлення
                             <textarea class="contakt-page__form-textaria" name="message"
                                 placeholder="Залишіть своє повідомлення"></textarea>
                         </label>
-                        <input class="visually-hidden" name="add-file" type="file"
-                            id="file-upload" />
+                        <input class="visually-hidden" name="add-file" type="file" id="file-upload" />
                         <label for="file-upload" class="contact-page__add-file-label">
                             <svg class="textaria__icon" width="22" height="20">
                                 <use href="./images/sprite.svg#icon-clip"></use>
                             </svg>
                         </label>
                     </div>
-                    <p class="contakt-page__add-file-text">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
+                    <p class="contakt-page__add-file-text">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+                    </p>
                     <button type="submit" class="main-button contact-page__main-button">Відправити</button>
                 </form>
             </div>
