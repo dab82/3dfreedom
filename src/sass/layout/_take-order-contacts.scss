@@ -102,7 +102,6 @@
   }
 }
 
-// hover на "скрепку"?
 .take-order__message-input {
   max-width: 100%;
   color: transparent;
@@ -263,10 +262,19 @@
     position: absolute;
     background-image: url('../images/desktop/take-order/pic.png');
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
-    width: 560px;
+    width: 598px;
     height: 424px;
+    background-size: 100%;
     background-repeat: no-repeat;
-    bottom: 36px;
-    right: -36px;
+    bottom: 35px;
+    right: -73px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
+  (min-resolution: 192dpi) and (min-width: 1444px),
+  (min-resolution: 2dppx) and (min-width: 1444px) {
+  .take-order__contact-bacgraund {
+    background-image: url('../images/desktop/take-order/pic@2x.png');
   }
 }
