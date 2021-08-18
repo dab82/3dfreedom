@@ -45,21 +45,24 @@
 }
 
 .lo-create-model__img {
+  flex-basis: calc(100% / 2 - 10px);
   margin-top: 16px;
   margin-left: 10px;
 
   @include min-width('medium') {
+    flex-basis: calc(100% / 4 - 12px);
     margin-top: 24px;
     margin-left: 12px;
-    width: 153px;
-    height: 134px;
+    // width: 153px;
+    // height: 134px;
   }
 
   @include min-width('large') {
+    flex-basis: calc(100% / 4 - 20px);
     margin-top: 52px;
     margin-left: 20px;
-    width: 250px;
-    height: 219px;
+    // width: 250px;
+    // height: 219px;
   }
 }
 
