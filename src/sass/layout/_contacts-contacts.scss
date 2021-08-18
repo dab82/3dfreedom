@@ -31,6 +31,7 @@
   height: 100%;
   border: none;
   padding: 0px;
+  cursor: pointer;
 }
 .contakt-page__form-input:focus,
 .contakt-page__form-input:hover {
@@ -42,17 +43,11 @@
 .contakt-page__form-input:not(:placeholder-shown) + .contakt-page__form-field {
   transform: translateY(-150%);
   font-size: 14px;
-  color: var(--form-placeholder-color);
+  // color: var(--form-placeholder-color);
 
   transition: transform 250ms linear 250ms;
 }
 
-// // .contakt-page__form-field:nth-child(-n + 2)::after {
-// //   content: '';
-// //   display: block;
-// //   margin-top: 4px;
-// //   border: 1px solid var(--accent-color);
-// // }
 .contakt-page__form-textaria::placeholder {
   font-weight: normal;
   font-size: 14px;
@@ -74,6 +69,7 @@
   overflow: hidden;
   background-color: transparent;
   outline: none;
+  cursor: pointer;
 }
 
 .contakt-page__form-textaria:focus,
