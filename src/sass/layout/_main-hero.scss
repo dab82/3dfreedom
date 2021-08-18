@@ -68,10 +68,11 @@
     }
   }
   &__link {
-    @include flex-center();
     position: absolute;
+    fill: #008cef;
     cursor: pointer;
     z-index: 2;
+    transition: 250ms linear;
 
     @include max-width('medium') {
       display: none;
@@ -79,15 +80,19 @@
     @include min-width('medium') {
       display: block;
       padding: 29px;
-      left: 67px;
-      bottom: 54px;
+      left: 62px;
+      bottom: 56px;
     }
     @include min-width('large') {
       padding: 56px;
       left: 5px;
-      bottom: -10px;
+      bottom: -8px;
     }
   }
+  // &__link:hover,
+  // &__link:focus {
+  //   fill: #a1b7c4;
+  // }
   &__icon {
     @include min-width('medium') {
       padding: 0;
