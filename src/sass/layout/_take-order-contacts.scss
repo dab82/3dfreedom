@@ -32,7 +32,7 @@
   &:hover,
   &:focus {
     outline: none;
-    border-color: #2196f3;
+    border-color: var(--icon-pseudoelement-color);
   }
 
   &::placeholder {
@@ -60,13 +60,15 @@
   &:focus {
     background-image: url(../images/mobile/take-over/polygon-close.svg);
     outline: none;
-    border-color: #2196f3;
+    border-color: var(--icon-pseudoelement-color);
   }
 }
-.textaria-wrap {
+.textaria-wrapper {
   position: relative;
   height: 222px;
+  margin-bottom: 4px;
 }
+
 .textaria__icon {
   fill: var(--form-placeholder-color);
   position: absolute;
@@ -84,6 +86,7 @@
 .take-order__message {
   width: 100%;
   height: 199px;
+
   margin-top: 4px;
   padding: 22px 20px;
   border: 1px solid #487996;
@@ -109,11 +112,11 @@
 .take-order__message-text {
   @include font(16px, 400, 20px);
   color: var(--form-placeholder-color);
-  margin-top: 4px;
+
   margin-bottom: 24px;
 }
 
-.take-order__contact-wrapper:not(:last-child) {
+.take-order__contact-wrapper:not(:nth-child(3)) {
   @media screen and (max-width: 767px) {
     margin-bottom: 24px;
   }
@@ -144,7 +147,7 @@
   &:hover,
   &:focus {
     outline: none;
-    color: #2196f3;
+    color: var(--icon-pseudoelement-color);
   }
 }
 
@@ -166,6 +169,7 @@
   .take-order__contacts-title {
     text-align: center;
     @include font(24px, 700, 30px);
+    margin-bottom: 35px;
   }
 
   .take-order__form {
@@ -198,6 +202,10 @@
 
 // 1444+
 @media screen and (min-width: 1444px) {
+  .take-order__contacts {
+    padding-bottom: 100px;
+  }
+
   .take-order__container {
     display: flex;
     justify-content: space-between;
@@ -206,11 +214,12 @@
   .take-order__contacts-title {
     @include font(36px, 700, 45px);
     text-align: start;
+    margin-bottom: 44px;
   }
 
   .take-order__form {
     width: 515px;
-    margin-bottom: 100px;
+    margin-bottom: 0;
   }
   .take-order__form-input {
     &::placeholder {
@@ -228,7 +237,7 @@
   .take-order__contact-wrapper {
     text-align: end;
 
-    &:not(:last-child) {
+    &:not(:nth-child(3)) {
       margin-bottom: 30px;
     }
   }
@@ -266,8 +275,8 @@
     height: 424px;
     background-size: 100%;
     background-repeat: no-repeat;
-    bottom: 35px;
-    right: -73px;
+    bottom: -67px;
+    right: -85px;
   }
 }
 
