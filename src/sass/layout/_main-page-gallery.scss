@@ -18,9 +18,12 @@
 }
 
 .gallery__card-title {
-    padding-top: 8px;
     @include font(16px, 300, 20px);
     color: var(--accent-color);
+}
+
+.gallery__list-img {
+    margin-bottom: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -41,8 +44,8 @@
             margin-bottom: 0px;
         }
     }
-    .gallery__card-title {
-        padding-top: 16px;
+    .gallery__list-img {
+        margin-bottom: 16px;
     }
 }
 
