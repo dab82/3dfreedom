@@ -1,68 +1,101 @@
 .contakt-page__title {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .video {
-    border-width: 0px;
+  border-width: 0px;
 }
 
 .contakt-page__video {
-    position: relative;
-    width: 280px;
-    height: 171px;
-    max-width: 280px;
-    max-height: 171px;
-    border-radius: 15px;
-    overflow: hidden;
-    margin-bottom: 16px;
+  position: relative;
+  width: 280px;
+  height: 171px;
+  max-width: 280px;
+  max-height: 171px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 16px;
 }
 
 iframe {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
 
 .contakt-page__text-item:not(:last-child) {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.emoji {
+  position: relative;
+}
+.emoji::after {
+  content: ' ';
+  display: block;
+  height: 22px;
+  width: 22px;
+  background-size: cover;
+  position: absolute;
+  background-image: url('./../images/mobile/take-over/emoji.png');
+  top: -2px;
+  left: 175px;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .emoji::after {
+    background-image: url('./../images/mobile/take-over/emoji@2x.png');
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .contakct-page__wrap {
-        display: flex;
-        justify-content: space-between;
-    }
-    .contakt-page__video {
-        max-width: 247px;
-        max-height: 192px;
-        width: 247px;
-        height: 192px;
-        margin-bottom: 0px;
-    }
-    .contakct-page__text {
-        width: 381px;
-    }
-    .contakt-page__title {
-        margin-bottom: 24px;
-    }
+  .contakct-page__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contakt-page__video {
+    max-width: 247px;
+    max-height: 192px;
+    width: 247px;
+    height: 192px;
+    margin-bottom: 0px;
+  }
+  .contakct-page__text {
+    width: 381px;
+  }
+  .contakt-page__title {
+    margin-bottom: 24px;
+  }
 }
 
 @media screen and (min-width: 1444px) {
-    .contakt-page__title {
-        margin-top: 24px;
+  .contakt-page__video {
+    max-width: 515px;
+    max-height: 315px;
+    width: 515px;
+    height: 315px;
+  }
+  .contakct-page__text {
+    width: 515px;
+  }
+  .contakt-page__text-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .emoji::after {
+    content: ' ';
+    display: block;
+    height: 44px;
+    width: 44px;
+    background-size: cover;
+    position: absolute;
+    background-image: url('./../images/desktop/take-order/emoji.png');
+    top: 85px;
+    left: 0;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .emoji::after {
+      background-image: url('./../images/desktop/take-order/emoji@2x.png');
     }
-    .contakt-page__video {
-        max-width: 515px;
-        max-height: 315px;
-        width: 515px;
-        height: 315px;
-    }
-    .contakct-page__text {
-        width: 515px;
-    }
-    .contakt-page__text-item:not(:last-child) {
-        margin-bottom: 24px;
-    }
+  }
 }
