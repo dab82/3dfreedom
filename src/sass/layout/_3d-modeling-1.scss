@@ -1,21 +1,6 @@
 .methods-creations {
   padding-top: 0px;
 
-  @media screen and (max-width: 767px) {
-    background-image: url(../images/mobile/3d-modeling/img0.png);
-    background-size: 280px 164px;
-    background-repeat: no-repeat;
-    background-position: 50% 87%;
-    padding-bottom: 248px;
-
-    @media screen and (max-width: 767px),
-      (min-device-pixel-ratio: 2) and (max-width: 767px),
-      (min-resolution: 192dpi) and (max-width: 767px),
-      (min-resolution: 2dppx) and (max-width: 767px) {
-      background-image: url(../images/mobile/3d-modeling/img0@2x.png);
-    }
-  }
-
   @include min-width('medium') {
     padding-bottom: 52px;
   }
@@ -26,50 +11,20 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1443px) {
-  .img-container {
-    background-image: url(../images/tablet/3d-modeling/img0.png);
-    background-size: 246px 144px;
-    background-position: 95% 55%;
-    background-repeat: no-repeat;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1443px),
-  (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1443px),
-  (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1443px),
-  (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1443px) {
-  .img-container {
-    background-image: url(../images/tablet/3d-modeling/img0@2x.png);
-  }
-}
-
-@media screen and (min-width: 1444px) {
-  .methods-creations {
-    background-image: url(../images/desktop/3d-modeling/img0.png);
-    background-size: 515px 301px;
-    background-repeat: no-repeat;
-    background-position: 79% 42%;
-  }
-}
-
-@media screen and (min-width: 1444px),
-  (min-device-pixel-ratio: 2) and (min-width: 1444px),
-  (min-resolution: 192dpi) and (min-width: 1444px),
-  (min-resolution: 2dppx) and (min-width: 1444px) {
-  .methods-creations {
-    background-image: url(../images/desktop/3d-modeling/img0@2x.png);
-  }
+.img-container {
+  position: relative;
 }
 
 .methods-creations__title {
   margin-bottom: 16px;
   padding-right: 31px;
   color: var(--accent-color);
+  text-transform: uppercase;
 }
 
 .methods-creations__list {
   position: relative;
+  margin-bottom: 32px;
 
   @include min-width('medium') {
     margin-bottom: 0;
@@ -102,4 +57,25 @@
 
 .methods-creations__item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.methods-model__img {
+  margin-bottom: 52px;
+}
+
+@media screen and (min-width: 767px) {
+  .methods-model__img {
+    position: absolute;
+    margin-bottom: 0;
+    z-index: -1;
+    top: 15%;
+    right: 3%;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .methods-model__img {
+    top: -24%;
+    right: 2%;
+  }
 }
