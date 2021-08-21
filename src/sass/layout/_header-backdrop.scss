@@ -82,6 +82,12 @@
   @include font(24px, 500, 30px);
   text-align: center;
   color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--accent-color);
+  }
 }
 
 .backdrop__list {
