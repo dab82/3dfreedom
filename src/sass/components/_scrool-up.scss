@@ -1,0 +1,18 @@
+.scrollup {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  fill: var(--accent-color);
+  background-color: transparent;
+  right: 20px;
+  bottom: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+
+  &:focus,
+  &:hover {
+    fill: var(--icon-pseudoelement-color);
+    box-shadow: var(--btn-box-shadow);
+  }
+}
