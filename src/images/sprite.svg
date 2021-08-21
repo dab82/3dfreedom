@@ -28,5 +28,9 @@
 <symbol id="icon-nav-arrow" viewBox="0 0 107 32">
 <path fill="#008cef" style="fill: var(--color1, #008cef)" d="M53.333 32l-46.188-32h92.376l-46.188 32z"></path>
 </symbol>
+<symbol id="icon-circle-up" viewBox="0 0 32 32">
+<path d="M0 16c0 8.837 7.163 16 16 16s16-7.163 16-16-7.163-16-16-16-16 7.163-16 16zM29 16c0 7.18-5.82 13-13 13s-13-5.82-13-13 5.82-13 13-13 13 5.82 13 13z"></path>
+<path d="M22.086 20.914l2.829-2.829-8.914-8.914-8.914 8.914 2.828 2.828 6.086-6.086z"></path>
+</symbol>
 </defs>
 </svg>
