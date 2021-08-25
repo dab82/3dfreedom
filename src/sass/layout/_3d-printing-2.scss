@@ -78,7 +78,6 @@
   .processes__description {
     display: flex;
     flex-direction: column;
-    margin-left: 78px;
   }
 
   .processes__description-part {
@@ -106,12 +105,11 @@
   }
 
   .processes__img {
-    margin: 0 auto;
+    margin-right: 78px;
   }
 
   .order-button {
     width: 277px;
     margin-top: 52px;
-    margin-left: 78px;
   }
 }
